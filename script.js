@@ -115,6 +115,7 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
 (function(){
   const SUPABASE_URL='https://plyediiadzyzahdylmyb.supabase.co';
   const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBseWVkaWlhZHp5emFoZHlsbXliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMTI5NTIsImV4cCI6MjA3MDU4ODk1Mn0.tgWqzNJsLWOynSd9YtKTxbueZrUtqPj0KXUQw1yDscM';
+  const MAKE_WEBHOOK_URL='https://hook.eu2.make.com/x7hd0oiuc9rxgsoskhhx6zwki5oeycwi';
   let cur=1,adsHist=null;
   function s3(){return adsHist==='running'?'3a':adsHist==='stopped'?'3b':'3c';}
   function val(id){const el=document.getElementById(id);return el?el.value.trim():'';}
@@ -157,6 +158,11 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
       body:JSON.stringify(payload)
     });
     if(!res.ok) throw new Error('Submission failed: '+res.status);
+    fetch(MAKE_WEBHOOK_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(Object.assign({},payload,{submitted_at:new Date().toISOString()}))
+    }).catch(()=>{});
   }
   function show(s){
     document.querySelectorAll('.fp-step').forEach(el=>el.classList.remove('active'));
