@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="color-scheme" content="light only"/>
+<meta name="supported-color-schemes" content="light"/>
+<meta name="theme-color" content="#193965"/>
+<title>LeadGiggle — Predictable Customer Acquisition Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="#hero" class="nav-logo" onclick="scrollToSection('hero');return false"><img src="assets/logo.png" alt="LeadGiggle"/></a>
+  <ul class="nav-desktop">
+    <li><a href="#services" onclick="scrollToSection('services');return false">Services</a></li>
+    <li><a href="#case-study" onclick="scrollToSection('case-study');return false">Case Study</a></li>
+    <li><a href="#process" onclick="scrollToSection('process');return false">Process</a></li>
+    <li><a href="#why" onclick="scrollToSection('why');return false">Why Us</a></li>
+    <li><a href="#faq" onclick="scrollToSection('faq');return false">FAQ</a></li>
+    <li><button onclick="showForm()" class="nav-cta">Book a Strategy Call</button></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="nav-panel" id="nav-panel">
+  <div class="nav-panel-header"><button class="nav-close-panel" onclick="closeMenu()">✕</button></div>
+  <div class="nav-panel-links">
+    <a href="#services" onclick="scrollToSection('services');closeMenu();return false">Services</a>
+    <a href="#case-study" onclick="scrollToSection('case-study');closeMenu();return false">Case Study</a>
+    <a href="#process" onclick="scrollToSection('process');closeMenu();return false">Process</a>
+    <a href="#why" onclick="scrollToSection('why');closeMenu();return false">Why Us</a>
+    <a href="#faq" onclick="scrollToSection('faq');closeMenu();return false">FAQ</a>
+    <button onclick="showForm();closeMenu()" class="panel-cta">Book a Strategy Call</button>
+  </div>
+</div>
+
+<div id="page-lp">
+
+<section id="hero">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container hero-inner">
+    <div style="position:relative;z-index:2">
+      <span class="eyebrow">Predictable Customer Acquisition Systems</span>
+      <h1 class="hero-headline">Build A Predictable Customer Acquisition System For Your Home Service Business</h1>
+      <p class="hero-sub">Stop relying on referrals, inconsistent marketing, and guesswork to create your next opportunity.<br/><br/>LeadGiggle builds acquisition systems for high-ticket home service businesses in Kenya; combining strategy, lead generation, qualification, and optimization into one system designed to create a more predictable path to growth.</p>
+      <div class="hero-trust">
+        <div class="hero-trust-item">Built exclusively for high-ticket home service businesses</div>
+        <div class="hero-trust-item">Every decision is tied to profit.</div>
+        <div class="hero-trust-item">Month-to-month. No lock-in.</div>
+      </div>
+    </div>
+    <div class="hero-mascot"><img src="assets/mascot.png" alt="LeadGiggle Mascot"/></div>
+  </div>
+  <div class="section-cta container"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+</section>
+
+<section id="problem" style="background:var(--cream);padding:60px 0 0;position:relative;z-index:2;overflow:visible">
+  <div class="container">
+    <span class="eyebrow">Sound Familiar?</span>
+    <h2 class="section-headline" style="color:var(--navy)">Your business has proven it can deliver. The problem is getting a consistent flow of the right opportunities.</h2>
+    <p class="problem-sub">Most businesses do not have a service problem. They have a lead generation system problem. A lot of businesses reach a point where referrals built the foundation, but referrals alone cannot create predictable growth. When the pipeline depends entirely on who happens to recommend you this week or disconnected marketing efforts, planning becomes difficult. Hiring becomes difficult. Investing back into the business becomes difficult. Growth becomes unpredictable.</p>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="problem-num">01</div>
+        <h3>The Referral Trap &amp; The Feast and Famine Cycle</h3>
+        <p>Referrals are valuable, they come with built-in trust and are one of the best sources of business. The problem begins when referrals become the only acquisition channel. One month the business is fully booked. The next month the phone slows down. When the phone goes quiet, everything goes quiet. January is packed. March is silent. You're either turning away work or wondering where the next job is coming from. That cycle makes real growth structurally impossible — you can't build a team, invest in equipment, or pursue larger contracts when profit swings this hard month to month. The goal is not to replace referrals. The goal is to build an additional system that gives the business more control over where future customers come from.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-num">02</div>
+        <h3>Marketing Spend Without a Clear Return &amp; Paying for Activity, Not Results</h3>
+        <p>Many businesses have already tried marketing, agencies, advertising, websites, different platforms. The issue is not that they did nothing. The issue is that the activity existed without a clear connection to profit. Reports showed clicks, impressions, reach, and engagement. The numbers looked fine on a slide deck and thin in the bank account. The question that mattered — did this create more paying customers? — was left unanswered. Months passed, the retainer kept running, and the pipeline didn't change.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-num">03</div>
+        <h3>Too Many Platforms and the "More Marketing" Problem</h3>
+        <p>Google or Meta? SEO or content? Everyone has a confident opinion and every agency pitches a different answer. You've tested a few, spent real money doing it, and walked away with underwhelming results and no clearer picture of what actually works for a business like yours. When marketing doesn't produce predictable results, the common response is adding more. Another platform. Another campaign. Another tactic. A little on Google. A little on Facebook. A boosted post. No single channel receives enough investment to build momentum. The budget gets divided until it's too small to produce results anywhere, and the business stays exactly where it started. The problem is usually not a lack of marketing. It's that there is no clear acquisition system connecting attention, enquiries, qualification, and sales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="case-study" style="background:var(--navy);padding:60px 0 0">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container" style="position:relative;z-index:2">
+    <span class="eyebrow">24-Day Performance Snapshot</span>
+    <h2 class="cs-kicker">From Referral-Dependent To A Measurable Customer Acquisition System</h2>
+    <span class="cs-sub-label">Building A Customer Acquisition System For A New Solar Business From Zero Digital Presence</span>
+    <p class="cs-intro">A strategic breakdown of the decisions, data, and improvements behind the first 24 days.</p>
+    <div class="cs-meta">
+      <span class="cs-meta-item"><span class="cs-meta-label">Client</span>G&amp;P Solar Systems</span>
+      <span class="cs-meta-item"><span class="cs-meta-label">Industry</span>Solar Installation</span>
+      <span class="cs-meta-item"><span class="cs-meta-label">Location</span>Kenya</span>
+      <span class="cs-meta-item"><span class="cs-meta-label">Channel</span>Google Search Ads</span>
+    </div>
+    <div class="cs-metrics">
+      <div class="cs-metric reveal"><div class="cs-metric-value" data-target="517000" data-prefix="KSh " data-comma="true">KSh 0</div><div class="cs-metric-label">Revenue Generated</div><div class="cs-metric-note">Confirmed closed deals</div></div>
+      <div class="cs-metric reveal reveal-delay-1"><div class="cs-metric-value">42.6×</div><div class="cs-metric-label">Return on Ad Spend</div><div class="cs-metric-note">KSh 1 in → KSh 42.6 out</div></div>
+      <div class="cs-metric reveal reveal-delay-2"><div class="cs-metric-value">24</div><div class="cs-metric-label">Active Campaign Days</div><div class="cs-metric-note">Nov 24 – Dec 24, 2025</div></div>
+      <div class="cs-metric reveal reveal-delay-3"><div class="cs-metric-value">$94.94</div><div class="cs-metric-label">Total Ad Spend</div><div class="cs-metric-note">KSh 500/day average</div></div>
+    </div>
+    <div class="cs-narrative">
+      <div class="reveal">
+        <h3>The Situation</h3>
+        <p>When G&amp;P Solar Systems partnered with LeadGiggle, they had no website, no established digital presence, and a pipeline built almost entirely on referrals. Referrals had helped generate projects, but the challenge was predictability. One successful month didn't guarantee the next. The business needed a way to consistently reach people actively looking for solar installation services without relying entirely on who happened to recommend them.</p>
+        <p>The objective was clear: Build a measurable customer acquisition system capable of generating qualified enquiries and creating a more predictable path to growth.</p>
+      </div>
+      <div class="reveal">
+        <h3>What Was Built</h3>
+        <p>Rather than simply launching advertising, the focus was on building the foundations of a customer acquisition system that could be measured, improved, and scaled over time. The initial system included:</p>
+        <ul>
+          <li>A conversion-focused landing page designed to turn search demand into qualified enquiries.</li>
+          <li>A demand capture strategy focused on reaching people actively searching for solar installation services.</li>
+          <li>Conversion tracking to measure enquiries and campaign performance.</li>
+          <li>Multiple enquiry paths through both website forms and phone calls.</li>
+          <li>An initial lead qualification approach designed to improve enquiry quality.</li>
+          <li>A measurement framework for evaluating performance and identifying future optimisation opportunities.</li>
+        </ul>
+        <p>The objective wasn't simply to generate more enquiries. It was to build a system capable of consistently creating qualified customer opportunities while producing the data needed to refine and strengthen performance over time.</p>
+      </div>
+      <div class="reveal">
+        <h3>Before The Ads</h3>
+        <p>Before a single shilling went into advertising, the foundation had to be built correctly. Paid demand capture only works when the system receiving that demand is prepared to convert it. This meant building a conversion-focused landing experience, strengthening the online presence, and creating a clear path designed to turn search intent into qualified enquiries. The goal wasn't simply getting visitors. The goal was building a system capable of turning buyer intent into measurable customer opportunities.</p>
+      </div>
+      <div class="reveal">
+        <h3>Why Google Search Ads</h3>
+        <p>Google Search Ads were chosen because of where they sit in the buyer journey. Someone searching for "solar installation Kenya" or "solar panel installers Nairobi" is not casually browsing. They already have intent. They are actively looking for someone who can solve the problem. For this stage of the business, the objective was to capture existing demand and prove whether a predictable acquisition channel could be created with a controlled budget.</p>
+      </div>
+      <div class="reveal">
+        <h3>Why Not Meta Ads?</h3>
+        <p>Meta was not ignored — it simply wasn't the first strategic priority. Channels that create demand like Facebook and Instagram work best when the business already has a strong offer, enough testing budget, strong creative angles, and the ability to handle additional enquiry volume. At this stage, the priority was not creating new demand. It was connecting with people who were already searching for a solar installation provider and measuring how effectively those opportunities could be converted into qualified enquiries.</p>
+      </div>
+      <div class="reveal">
+        <h3>Why Not SEO &amp; AI Search Visibility?</h3>
+        <p>Organic visibility through SEO and AI search optimization remains an important long-term investment. It helps businesses build discoverability, strengthen authority, and generate opportunities from people searching organically. However, organic visibility compounds over time. The immediate objective was to establish a measurable customer acquisition channel without waiting months for rankings to develop. Once a reliable demand capture system had been validated, long-term visibility channels could be layered onto that foundation to create a stronger and more resilient customer acquisition system.</p>
+      </div>
+      <div class="reveal">
+        <h3>Campaign Details</h3>
+        <table class="data-table">
+          <thead><tr><td>Detail</td><td>Result</td></tr></thead>
+          <tbody>
+            <tr><td>Reporting Period</td><td>Nov 24 – Dec 24, 2025</td></tr>
+            <tr><td>Active Campaign Days</td><td>24</td></tr>
+            <tr><td>Campaign Type</td><td>Google Search Ads</td></tr>
+            <tr><td>Average Daily Budget</td><td>KSh 500</td></tr>
+            <tr><td>Total Ad Spend</td><td>KSh 12,149 ($94.94)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="reveal">
+        <h3>Strategic Insights</h3>
+        <div class="insight-grid">
+          <div class="insight"><strong>High-ticket services require conversations, not just enquiries.</strong><p>The revenue generated from this campaign came through phone conversations. For higher-value purchases, buyers often need confidence before committing. They want to ask questions, understand the solution, and trust the business. The acquisition system needs to create opportunities for those conversations to happen.</p></div>
+          <div class="insight"><strong>Messaging determines who enters the pipeline.</strong><p>Early messaging attracted people interested in price and payment flexibility. The data showed that high-ticket buyers respond differently. The strongest positioning was around reliability, quality, system design, and long-term value. The lesson was not simply "get more leads" — it was "attract better opportunities."</p></div>
+          <div class="insight"><strong>Qualification separates activity from revenue.</strong><p>A busy inbox does not always mean a healthy pipeline. The quality of enquiries matters. The system needed stronger qualification around buyer intent, timeline, and fit so the business could spend more time on serious opportunities.</p></div>
+          <div class="insight"><strong>The system after the lead matters as much as the system before it.</strong><p>Generating enquiries is only the first stage. Response speed, follow-up structure, and sales conversations influence whether opportunities become customers. A complete acquisition system continues after the lead arrives.</p></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3>What Changed After The 24-Day Snapshot</h3>
+        <ul class="change-list">
+          <li>Messaging &amp; Positioning refined to better communicate reliability, professional system design, and long-term value.</li>
+          <li>Lead Qualification process reviewed to improve qualification before sales conversations began.</li>
+          <li>Landing Experience continued to evolve based on real customer behaviour.</li>
+          <li>Sales Process &amp; Follow-up strengthened — response speed, follow-up structure, quotation delivery, and sales conversations all improved.</li>
+        </ul>
+      </div>
+      <div class="cs-faq reveal">
+        <h3>Frequently Asked Questions</h3>
+        <div class="cs-faq-item">
+          <div class="cs-faq-q">Why start with KSh 500 per day?</div>
+          <div class="cs-faq-a">G&amp;P Solar Systems was entering its first digital customer acquisition channel. The objective wasn't to maximise advertising spend from day one. It was to validate demand, understand lead quality, measure system performance, and collect enough data to make informed optimisation decisions before increasing investment. Starting with a controlled budget allowed the customer acquisition system to be tested, measured, and refined before scaling.</div>
+        </div>
+        <div class="cs-faq-item">
+          <div class="cs-faq-q">Can I start with KSh 500 per day like G&amp;P Solar Systems?</div>
+          <div class="cs-faq-a">Not necessarily. Advertising budget requirements depend on factors such as your market, level of competition, target locations, service offering, growth objectives, and the volume of customer opportunities you're aiming to generate. While KSh 500 per day proved suitable for this initial campaign, it shouldn't be viewed as a universal benchmark. During the strategy process, LeadGiggle recommends an advertising budget based on the specific requirements of your business and the market you're competing in.</div>
+        </div>
+      </div>
+      <div class="cs-takeaways reveal">
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>A predictable customer acquisition system can be built from zero digital presence.</li>
+          <li>Capturing existing demand provides measurable data that guides better business decisions.</li>
+          <li>High-ticket services are won through conversations, not simply enquiries.</li>
+          <li>Strong customer acquisition systems improve through continuous measurement, refinement, and optimisation.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-cta"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--cream);padding:60px 0 0">
+  <div class="container">
+    <span class="eyebrow">How We Build Your System</span>
+    <h2 class="section-headline" style="color:var(--navy)">One outcome. Multiple components. Deployed where your business needs them most.</h2>
+    <p class="services-bridge">Different businesses have different bottlenecks. Some need more qualified buyers to reach them. Some already generate enquiries but lose opportunities because follow-up and qualification are weak. Others need stronger visibility to be found consistently. The right system depends on understanding where the biggest opportunity exists and building around that.</p>
+    <div class="services-grid">
+      <div class="service-card reveal"><span class="service-badge badge-active">Active</span><h3>Google Ads Lead Generation</h3><p>Google Ads works because it reaches buyers who already have intent. When someone searches for a service, they are often closer to making a decision than someone passively scrolling through content. Campaigns get built around high-intent searches, conversion-focused landing pages, tracking, and optimisation. The objective is not traffic for the sake of traffic — it's qualified enquiries with a clear connection between marketing spend and business profit.</p></div>
+      <div class="service-card reveal reveal-delay-1"><span class="service-badge badge-active">Active</span><h3>Lead Qualification &amp; Automation Systems</h3><p>Getting enquiries is only one part of the process. Many businesses don't lose opportunities because they can't generate interest — they lose them after the enquiry comes in. Slow response times, inconsistent follow-up, and poor qualification create gaps between a potential customer showing interest and becoming a paying client. The right system responds immediately, filters opportunities, and ensures sales conversations are happening with people worth pursuing.</p></div>
+      <div class="service-card reveal"><span class="service-badge badge-request">Available on Request</span><h3>Meta Ads <span style="font-size:0.8rem;font-weight:400;font-family:'Inter',sans-serif;color:var(--muted)">(Selective Engagements)</span></h3><p>Meta Ads can be an effective acquisition channel — but they are not the right solution for every business. Running Meta without the right conditions often leads to wasted spend and frustration. Before recommending Meta, three things get assessed: whether the business has the right offer, sufficient budget for proper testing, strong enough positioning to convert cold traffic, and the capacity to handle increased enquiry volume. If the foundation isn't ready, you'll hear what needs to change first.</p></div>
+      <div class="service-card reveal reveal-delay-1"><span class="service-badge badge-soon">Coming Soon</span><h3>Local SEO &amp; AI Search Visibility</h3><p>Paid acquisition creates immediate opportunities. Long-term search visibility creates an asset that compounds over time. As customer behaviour changes, businesses increasingly need to be visible not only on traditional search engines but also within AI-powered search experiences. This focuses on strengthening local presence and improving how the business is discovered consistently over time.</p></div>
+    </div>
+    <div class="section-cta"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+  </div>
+</section>
+
+<section id="process" style="background:var(--navy);padding:60px 0 0">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container" style="position:relative;z-index:2">
+    <span class="eyebrow">How It Works</span>
+    <h2 class="section-headline">HOW WE UNCLOG YOUR LEAD PIPELINE</h2>
+    <p class="process-intro">Most businesses do not have a traffic problem. They have a pipeline problem. Leads are inconsistent, enquiries go cold, and marketing decisions are often made without a clear understanding of where opportunities are being lost. Before recommending a solution, the first step is understanding what is actually happening inside the business.</p>
+    <div class="process-steps">
+      <div class="process-step reveal"><div class="step-num">1</div><div><h3>Diagnose</h3><p>Every business has a different reason growth is being limited. The first step is identifying where the blockage exists. Where are your current leads coming from? Where are potential customers dropping off? Is the issue attracting the right buyers, qualifying enquiries, converting opportunities, or something else inside the process?<br/><br/>We look at your current situation, your market, your customers, and your revenue goals to understand what needs to change. No assumptions. No generic strategies. Just a clear diagnosis of what is preventing the business from growing predictably.</p></div></div>
+      <div class="process-step reveal"><div class="step-num">2</div><div><h3>Strategise</h3><p>Once the problem is understood, the acquisition strategy gets built. The strategy comes before the spend.<br/><br/>The focus is not choosing a platform because it is popular or because another business is using it. The focus is understanding your buyer, your market, and your growth goals before deciding what system needs to be built.<br/><br/>You know what is being built, why it is being built, and what it is designed to achieve.</p></div></div>
+      <div class="process-step reveal"><div class="step-num">3</div><div><h3>Execute</h3><p>The system gets built and launched. The right channels. The right messaging. The right conversion points. The right qualification process.<br/><br/>Everything works together toward one outcome: creating more qualified opportunities reaching your business consistently. This is where the strategy becomes an actual acquisition system.</p></div></div>
+      <div class="process-step reveal"><div class="step-num">4</div><div><h3>Optimise, Review &amp; Scale</h3><p>A customer acquisition system is never finished. Performance gets monitored, improvements get made, and the strategy evolves as the business and market change.<br/><br/>Weekly performance shows what is happening. Monthly analysis identifies what is improving and where adjustments are needed. Every quarter, a bigger question gets reviewed: Is this still the right strategy for where the business is going?<br/><br/>Sometimes the answer is scaling what is working. Sometimes the answer is adjusting direction. Either way, decisions are made through evaluation, not assumptions. The goal is not just generating more leads. The goal is building a stronger acquisition system every cycle.</p></div></div>
+    </div>
+    <div class="section-cta"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+  </div>
+</section>
+
+<section id="why" style="background:var(--cream);padding:60px 0 96px">
+  <div class="container">
+    <span class="eyebrow">Why LeadGiggle</span>
+    <h2 class="section-headline" style="color:var(--navy)">Built Around Building, Improving, and Scaling Your Acquisition System.</h2>
+    <p class="why-sub">Most marketing providers focus on launching campaigns. The focus here is on building systems — because a campaign can generate activity, but a properly built acquisition system creates a clearer path from investment to profit.</p>
+    <div class="why-grid">
+      <div class="why-card dark reveal"><h3>Your acquisition strategy should not be a maybe.</h3><p>It should be a step-by-step path toward building a more predictable profit engine. That requires more than launching ads and waiting. It requires understanding the market, analysing performance, making adjustments, and continuously improving the system as the business grows.</p></div>
+      <div class="why-card reveal"><h3>Proactive Strategy. Clear Communication. Continuous Improvement.</h3><p>A business should never feel like it's spending money in the dark. Proactive communication and analysis are built into the approach so the current state of the system is always clear — what's working, what needs improvement, and what decisions are being made next. Growth shouldn't stagnate. And the acquisition system driving it shouldn't either. The goal isn't maintaining campaigns — it's continuously improving the system so it becomes stronger over time.</p></div>
+      <div class="why-card reveal reveal-delay-1"><h3>We Sell One Thing: A Customer Acquisition System.</h3><p>Think about it this way. If your pipe is leaking, you call a plumber. You don't care whether they use a new technique or an old one. You don't care which tools they bring. You care about one thing: the pipe gets fixed. Customer acquisition works the same way. What's needed isn't Google Ads, Meta Ads, automation, or SEO just because those things exist. What's needed is a system that brings qualified buyers into the business consistently. The tools used to build that system depend on the market, the buyer, and where the biggest opportunity exists. That gets identified first. Then the right system gets built around it.</p></div>
+      <div class="why-card reveal"><h3>We Only Make Promises We Can Back Up.</h3><p>There are no promises of unrealistic overnight transformations. The outcome depends on the market, the offer, the budget, the competition, and how well the business handles opportunities. What gets provided is an honest assessment of what is possible, a clear strategy, and a system built to improve over time.</p></div>
+      <div class="why-card reveal reveal-delay-1"><h3>ROI Is the Metric That Matters.</h3><p>Clicks, impressions, and traffic are useful indicators — but they are not the reason a business invests in marketing. The metric that matters is whether the system creates more qualified opportunities that turn into paying customers. Every decision is made with that outcome in mind.</p></div>
+      <div class="why-card reveal"><h3>A Long-Term Growth Investment, Not a Short-Term Experiment.</h3><p>A strong acquisition system is built over time. The businesses that get the best results understand that growth is an investment, not a quick experiment. The first stage is building the right foundation. The next stage is collecting data, improving performance, and scaling what works. The focus isn't chasing short-term spikes — it's building something that becomes a valuable growth asset for the business.</p></div>
+      <div class="why-strategist reveal">
+        <h3>Meet Your Strategist</h3>
+        <div class="why-strategist-image"><span>Alfred's photo goes here</span></div>
+        <p>Hi, I'm Alfred, Founder and Lead Strategist at LeadGiggle.</p>
+        <p>When we work together, you're working directly with me. My role extends beyond executing marketing activities. It's to understand how your business acquires customers, identify where opportunities are being created and where they're being lost, and develop a customer acquisition system that supports more predictable growth.</p>
+        <p>Whether the priority is strengthening demand capture, improving demand conversion, refining your sales process, increasing pipeline visibility, improving follow-up, or building a more measurable customer acquisition system, every recommendation is guided by one objective: To help your business create a more predictable flow of qualified customer opportunities.</p>
+        <p>If we decide to work together, you'll work directly with me from strategy through implementation.</p>
+        <button class="btn btn-primary" onclick="showForm()">Book a Strategy Call With Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qualification" style="background:var(--navy);padding:60px 0 0">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container" style="position:relative;z-index:2">
+    <span class="eyebrow">Who This Is For</span>
+    <h2 class="section-headline">Built for businesses serious about predictable growth.</h2>
+    <p class="qual-sub">LeadGiggle works best with businesses that are committed to building a proper acquisition system — not testing a quick campaign to see if marketing works.</p>
+    <div class="qual-grid">
+      <div class="reveal">
+        <span class="qual-list-label yes">The strongest fit</span>
+        <ul class="qual-list">
+          <li><span class="qual-check yes"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#FF6900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>High-ticket home service businesses — solar, borehole drilling, water treatment, construction, roofing, plumbing, CCTV, interior design, outdoor structures, or similar, where each customer represents meaningful value</li>
+          <li><span class="qual-check yes"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#FF6900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Businesses tired of a pipeline that lives and dies by referrals</li>
+          <li><span class="qual-check yes"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#FF6900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Businesses that have invested in marketing before and walked away with activity instead of profit</li>
+          <li><span class="qual-check yes"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#FF6900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Businesses willing to invest properly and give the system enough time to mature</li>
+          <li><span class="qual-check yes"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#FF6900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Businesses looking for a growth partner, not a vendor who disappears after setup</li>
+        </ul>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="qual-list-label no">Probably not the right fit</span>
+        <ul class="qual-list">
+          <li><span class="qual-check no"><svg viewBox="0 0 10 10" fill="none"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="#4A5A7A" stroke-width="1.5" stroke-linecap="round"/></svg></span>Businesses looking for the cheapest option</li>
+          <li><span class="qual-check no"><svg viewBox="0 0 10 10" fill="none"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="#4A5A7A" stroke-width="1.5" stroke-linecap="round"/></svg></span>Businesses that need guaranteed lead numbers before understanding the market</li>
+          <li><span class="qual-check no"><svg viewBox="0 0 10 10" fill="none"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="#4A5A7A" stroke-width="1.5" stroke-linecap="round"/></svg></span>Businesses that want a one-month experiment to decide if acquisition systems works</li>
+          <li><span class="qual-check no"><svg viewBox="0 0 10 10" fill="none"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="#4A5A7A" stroke-width="1.5" stroke-linecap="round"/></svg></span>Businesses looking for random tactics added without understanding the bigger strategy</li>
+          <li><span class="qual-check no"><svg viewBox="0 0 10 10" fill="none"><path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="#4A5A7A" stroke-width="1.5" stroke-linecap="round"/></svg></span>Businesses looking for social media management or brand awareness alone</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-cta"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--cream);padding:60px 0 0">
+  <div class="container">
+    <span class="eyebrow">FAQ</span>
+    <h2 class="section-headline" style="color:var(--navy)">Questions we get asked. Answered directly.</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)">How long before I start seeing leads?<span class="faq-icon">+</span></button><div class="faq-a">Most businesses begin seeing early results within the first few weeks. However, lead quality and performance improve as data is collected, campaigns are refined, and the system becomes stronger. The first phase is building the foundation. The following phases focus on improving and scaling what works.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What types of businesses do you work with?<span class="faq-icon">+</span></button><div class="faq-a">High-ticket home service businesses — solar installation, borehole drilling, water treatment, construction, roofing, plumbing, CCTV and security installation, interior design, landscaping, outdoor structures, and similar. The common factor is that each customer has meaningful value and the buying decision requires trust. Fit gets assessed on the strategy call.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you guarantee a specific number of leads?<span class="faq-icon">+</span></button><div class="faq-a">No. Lead volume depends on the market, competition, budget, offer, and how well the business handles incoming opportunities. Anyone guaranteeing specific numbers before understanding the business and market is making a promise they cannot honestly back. The focus is on building the right system, tracking performance accurately, and improving over time.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What makes LeadGiggle different?<span class="faq-icon">+</span></button><div class="faq-a">The focus is on building acquisition systems — not just running campaigns. The goal is connecting marketing activity to business profit. The system gets reviewed, improved, and adjusted instead of being left on autopilot.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Month-to-month — does that mean we can leave anytime?<span class="faq-icon">+</span></button><div class="faq-a">Yes. Businesses shouldn't be trapped in long-term contracts — the reason to continue working together should be because the system creates value. That said, building a strong acquisition system is not a one-month marketing experiment. The strongest results come when the system has enough time to collect data, improve, and compound. Businesses looking for quick tricks are usually not the right fit. Businesses looking to build a long-term growth asset are.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why do you do quarterly reviews?<span class="faq-icon">+</span></button><div class="faq-a">Weekly and monthly performance shows what happened. Quarterly reviews evaluate whether the overall strategy is still the right one. Markets change, competitors change, and buyer behaviour changes. The purpose is to make strategic decisions before small issues become bigger problems.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">We already have a website. Do we still need a landing page?<span class="faq-icon">+</span></button><div class="faq-a">A website and a landing page serve different purposes. A website builds credibility and provides information. A landing page is built around one purpose — converting a specific visitor into a specific enquiry. For paid acquisition, the conversion path matters. Sending paid traffic to a general website is one of the most common reasons campaigns underperform.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">We get leads but they don't convert. Is that a lead generation problem?<span class="faq-icon">+</span></button><div class="faq-a">Not always. Sometimes the issue is lead quality — the wrong people are coming through. Sometimes it's a qualification problem. Sometimes it's follow-up speed or structure. The first step is understanding where opportunities are being lost before assuming more traffic is the solution. The fix is rarely just more leads.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do we need a big budget to get started?<span class="faq-icon">+</span></button><div class="faq-a">Budget requirements vary by market and business type. What matters more than size is whether the budget is sufficient for the market being competed in. This gets discussed honestly on the strategy call — if the budget isn't workable for the market, you'll hear that before anything gets spent.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What does the strategy call actually involve?<span class="faq-icon">+</span></button><div class="faq-a">A working conversation — not a pitch. The business, current lead flow, market, and where the gaps are all get looked at. The outcome is a clear picture of what a system could produce and what it would take to build it. About 30–45 minutes.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What about Meta Ads?<span class="faq-icon">+</span></button><div class="faq-a">Meta campaigns get run selectively — for businesses where the budget and creative conditions are right for proper testing. Assessed during the strategy call.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What happens to leads after they come in?<span class="faq-icon">+</span></button><div class="faq-a">For Google/Meta Ads clients, leads arrive via calls, form submissions, or WhatsApp directly to your team for handling and closing. For clients with a Lead Qualification &amp; Automation System, leads are pre-qualified before the team gets involved — so every conversation is with a buyer who already meets the criteria.</div></div>
+    </div>
+    <div class="section-cta"><button class="btn btn-primary" onclick="showForm()">Book a Strategy Call</button></div>
+  </div>
+</section>
+
+<section id="final-cta" style="background:var(--navy);padding:72px 0 96px;text-align:center;position:relative;overflow:hidden">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container" style="position:relative;z-index:2">
+    <h2 class="final-headline">Ready To Build A More Predictable Customer Acquisition System?</h2>
+    <p class="final-body">Growth becomes easier when you understand where your next customer opportunities can come from, and what's currently preventing more of them.</p>
+    <p class="final-body">The strategy call is a working session where we'll look at your business, your market, your current customer acquisition approach, and identify where opportunities may be created, lost, or improved.</p>
+    <p class="final-body">There are no generic pitches or one-size-fits-all recommendations. The conversation is designed to help you understand where your business stands today and what the most practical next steps might be.</p>
+    <p class="final-body">If it makes sense to work together, I'll prepare a tailored proposal outlining my recommendations and how I'd approach your business.</p>
+    <p class="final-body">If it doesn't, you'll still leave with a clearer understanding of your customer acquisition process and where your biggest opportunities may lie.</p>
+    <div class="final-ctas"><button class="btn btn-primary" onclick="showForm()">Book Your Strategy Call</button></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-mascot"><img src="assets/mascot.png" alt="LeadGiggle"/></div>
+    <p class="footer-tagline">Predictable Customer Acquisition Systems</p>
+    <div class="footer-contact">
+      <a href="mailto:mwalughoalfred@gmail.com">mwalughoalfred@gmail.com</a>
+      <a href="tel:0758381476">0758381476</a>
+      <span>Nanyuki, Kenya</span>
+    </div>
+    <p class="footer-copy">© LeadGiggle 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+</div>
+
+<div id="page-form">
+  <div class="fp-nav"><div class="fp-nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></div><button class="fp-close" onclick="hideForm()">✕</button></div>
+  <div class="fp-hero">
+    <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+    <div class="container fp-hero-inner" style="position:relative;z-index:2">
+      <span class="eyebrow">Let's See Where Your Business Stands</span>
+      <h1>Tell Us About Your Business</h1>
+      <h2>The information you provide helps us understand your current situation before the conversation begins.</h2>
+      <p>We'll look at your business, your market, your current lead sources, and where opportunities may be getting lost so the discussion is focused on your actual growth challenges.</p>
+      <p>The goal is to understand whether there is a realistic opportunity to build a stronger customer acquisition system for your business.</p>
+      <p>If there is a clear path forward, it will be outlined. If a different direction makes more sense, you'll leave with clarity on that as well.</p>
+      <p style="margin-top:12px;font-size:0.82rem;color:rgba(255,255,255,0.4)">It takes about 2 minutes to complete.</p>
+    </div>
+  </div>
+  <div class="fp-body">
+    <div class="fp-progress-track"><div class="fp-progress-bar" id="fp-bar"></div></div>
+    <div class="fp-step-labels"><span data-step="1">Business</span><span data-step="2">Background</span><span data-step="3">History</span><span data-step="4">Goals</span><span data-step="5">Timeline</span></div>
+    <div class="fp-card">
+      <div class="fp-step active" id="fp-step-1">
+        <div class="fp-step-title">Step 1 of 5 — Business Details</div>
+        <div class="fp-grid-2">
+          <div class="fp-field"><label>Business Name <span class="req">*</span></label><input type="text" id="f-biz-name" placeholder="e.g. Sunray Solar Ltd"/></div>
+          <div class="fp-field"><label>Your Name <span class="req">*</span></label><input type="text" id="f-name" placeholder="First and last name"/></div>
+          <div class="fp-field"><label>Phone Number <span class="req">*</span></label><input type="tel" id="f-phone" placeholder="e.g. +254 712 345 678"/><span class="fp-hint">We'll use this to reach you directly</span></div>
+          <div class="fp-field"><label>Email Address <span class="req">*</span></label><input type="email" id="f-email" placeholder="you@yourbusiness.com"/></div>
+          <div class="fp-field"><label>Location <span class="req">*</span></label><input type="text" id="f-location" placeholder="e.g. Nairobi, Mombasa, Kisumu"/></div>
+          <div class="fp-field"><label>Type of Business <span class="req">*</span></label><select id="f-biz-type"><option value="">Select your business type</option><option>Solar Installation</option><option>Solar Equipment Distribution</option><option>Borehole Drilling</option><option>Water Treatment (Residential &amp; Commercial)</option><option>Plumbing</option><option>Construction</option><option>Roofing</option><option>CCTV &amp; Security Installation</option><option>Interior Design</option><option>Outdoor Structures (Gazebos, Pergolas &amp; Shade Installation)</option><option>Landscaping &amp; Garden Services</option><option>Cleaning Services</option><option>Electric Fence Installation</option><option>Other</option></select></div>
+        </div>
+        <div class="fp-field-full" id="f-other-wrap" style="display:none"><label>Please describe your business</label><input type="text" id="f-other-biz" placeholder="Brief description"/></div>
+      </div>
+      <div class="fp-step" id="fp-step-2">
+        <div class="fp-step-title">Step 2 of 5 — Marketing Background</div>
+        <div class="fp-field-full no-top"><label>Have you run paid ads before?</label><div class="fp-options" id="f-ads-history"><div class="fp-option" data-val="running">Yes, I'm currently running ads</div><div class="fp-option" data-val="stopped">Yes, I've run ads before but stopped</div><div class="fp-option" data-val="never">No, I've never run paid ads</div></div></div>
+      </div>
+      <div class="fp-step" id="fp-step-3a">
+        <div class="fp-step-title">Step 3 of 5 — Your Current Ads</div>
+        <div class="fp-field-full no-top"><label>Which platforms are you currently on? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi"><div class="fp-option" data-val="google">Google Ads</div><div class="fp-option" data-val="meta">Meta Ads (Facebook / Instagram)</div><div class="fp-option" data-val="tiktok">TikTok Ads</div><div class="fp-option" data-val="other">Other</div></div></div>
+        <div class="fp-field-full"><label>How would you describe your current results?</label><div class="fp-options"><div class="fp-option" data-val="poor">Getting leads but quality is poor</div><div class="fp-option" data-val="inconsistent">Getting some leads but volume is inconsistent</div><div class="fp-option" data-val="little-return">Spending money but seeing very little return</div><div class="fp-option" data-val="scale">Results are okay but I want to scale</div></div></div>
+        <div class="fp-field-full"><label>Current monthly ad spend?</label><div class="fp-options"><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-1000">$500 – $1,000/month</div><div class="fp-option" data-val="o1000">Over $1,000/month</div></div></div>
+      </div>
+      <div class="fp-step" id="fp-step-3b">
+        <div class="fp-step-title">Step 3 of 5 — Previous Ad Experience</div>
+        <div class="fp-field-full no-top"><label>Which platforms did you use? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi"><div class="fp-option" data-val="google">Google Ads</div><div class="fp-option" data-val="meta">Meta Ads (Facebook / Instagram)</div><div class="fp-option" data-val="tiktok">TikTok Ads</div><div class="fp-option" data-val="other">Other</div></div></div>
+        <div class="fp-field-full"><label>Why did you stop?</label><div class="fp-options" id="f-why-stopped"><div class="fp-option" data-val="no-results">Didn't see results</div><div class="fp-option" data-val="expensive">Too expensive for what came back</div><div class="fp-option" data-val="no-manager">Didn't have someone to manage it properly</div><div class="fp-option" data-val="budget">Budget constraints at the time</div><div class="fp-option" data-val="other">Other</div></div></div>
+        <div class="fp-field-full" id="f-stopped-other-wrap" style="display:none"><label>Please specify</label><input type="text" placeholder=""/></div>
+        <div class="fp-field-full"><label>Current monthly marketing budget?</label><div class="fp-options"><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-1000">$500 – $1,000/month</div><div class="fp-option" data-val="o1000">Over $1,000/month</div></div></div>
+      </div>
+      <div class="fp-step" id="fp-step-3c">
+        <div class="fp-step-title">Step 3 of 5 — How You Currently Get Clients</div>
+        <div class="fp-field-full no-top"><label>How are you currently getting clients? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi"><div class="fp-option" data-val="referrals">Referrals / Word of mouth</div><div class="fp-option" data-val="social">Social media (organic)</div><div class="fp-option" data-val="walkin">Walk-ins / Physical location</div><div class="fp-option" data-val="content">TikTok / YouTube content</div><div class="fp-option" data-val="inconsistent">Leads have been inconsistent</div><div class="fp-option" data-val="other">Other</div></div></div>
+        <div class="fp-field-full"><label>What's pushing you toward paid advertising now?</label><div class="fp-options"><div class="fp-option" data-val="not-enough">Referrals aren't enough anymore</div><div class="fp-option" data-val="grow-faster">I want to grow faster than word of mouth allows</div><div class="fp-option" data-val="relaunch">I'm relaunching or scaling the business</div><div class="fp-option" data-val="competitor">A competitor is running ads and winning</div><div class="fp-option" data-val="overdue">I've been putting this off long enough</div></div></div>
+        <div class="fp-field-full"><label>Monthly budget you're comfortable investing?</label><div class="fp-options"><div class="fp-option" data-val="unsure">Not sure yet — need guidance</div><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-plus">$500+/month</div></div></div>
+      </div>
+      <div class="fp-step" id="fp-step-4">
+        <div class="fp-step-title">Step 4 of 5 — What You Need</div>
+        <div class="fp-field-full no-top"><label>Which part of the system interests you most?</label><div class="fp-options" id="f-service-interest"><div class="fp-option" data-val="google-ads">Google Ads Lead Generation</div><div class="fp-option" data-val="automation">Lead Qualification &amp; Automation Systems</div><div class="fp-option" data-val="both">Both — leads and a system to handle them</div><div class="fp-option" data-val="meta">Meta Ads</div><div class="fp-option" data-val="unsure">Not sure yet — need to understand what's right first</div></div><div class="fp-info-note" id="meta-note" style="display:none">Meta eligibility is discussed during the strategy call based on your budget and business fit.</div></div>
+        <div class="fp-field-full"><label>What's the primary goal right now?</label><div class="fp-options"><div class="fp-option" data-val="more-leads">Generate more leads consistently</div><div class="fp-option" data-val="better-leads">Improve the quality of leads already coming in</div><div class="fp-option" data-val="convert">Convert more existing enquiries into paying clients</div><div class="fp-option" data-val="full-system">Build a full customer acquisition system</div><div class="fp-option" data-val="explore">Understand what's realistic before deciding</div></div></div>
+      </div>
+      <div class="fp-step" id="fp-step-5">
+        <div class="fp-step-title">Step 5 of 5 — Last Step</div>
+        <div class="fp-field-full no-top"><label>How soon are you looking to move?</label><div class="fp-options"><div class="fp-option" data-val="now">Ready now</div><div class="fp-option" data-val="30-days">Within the next 30 days</div><div class="fp-option" data-val="90-days">Within the next 90 days</div><div class="fp-option" data-val="research">Still in research mode</div></div></div>
+        <div class="fp-field-full"><label>How did you find LeadGiggle?</label><div class="fp-options"><div class="fp-option" data-val="google">Google Search</div><div class="fp-option" data-val="referral">Referral</div><div class="fp-option" data-val="social">Social media</div><div class="fp-option" data-val="other">Other</div></div></div>
+        <div class="fp-field-full"><label>Anything we should know before the call? <span style="font-weight:400;color:#8A94A8">(Optional — e.g. specific profit targets, challenges, or questions)</span></label><textarea id="f-notes" rows="3" placeholder="Any context that would help us prepare for the conversation"></textarea></div>
+      </div>
+      <div class="fp-step" id="fp-thankyou">
+        <div class="fp-ty">
+          <div class="fp-ty-icon">✓</div>
+          <h2>Received.</h2>
+          <h3>Your Strategy Call Request Has Been Received.</h3>
+          <p class="fp-ty-intro">Before the conversation happens, the details you shared will be reviewed so we can understand your business context properly.</p>
+          <div class="fp-ty-steps">
+            <div class="fp-ty-step"><div class="fp-ty-step-num">1</div><div class="fp-ty-step-text"><h4>Your Business Gets Reviewed</h4><p>We'll look at your industry, current acquisition approach, challenges, and what you're trying to achieve.</p></div></div>
+            <div class="fp-ty-step"><div class="fp-ty-step-num">2</div><div class="fp-ty-step-text"><h4>The Opportunity Gets Assessed</h4><p>The conversation will focus on where growth may be limited, what is currently working, and where a stronger customer acquisition system could create improvement.</p></div></div>
+            <div class="fp-ty-step"><div class="fp-ty-step-num">3</div><div class="fp-ty-step-text"><h4>The Direction Becomes Clear</h4><p>If there is a strong opportunity to work together, the next steps will be mapped out. If the business needs a different approach first, that will be explained clearly.</p></div></div>
+          </div>
+          <p class="fp-ty-note">You'll hear from us within 24 hours on business days to confirm your call time.</p>
+          <button class="btn btn-primary" onclick="hideForm();scrollToSection('case-study')">Read The Case Study</button>
+        </div>
+      </div>
+      <div class="fp-nav-btns" id="fp-nav-btns">
+        <button class="fp-back-btn" id="fp-back" onclick="fpBack()" disabled>← Back</button>
+        <button class="btn btn-primary fp-continue-btn" id="fp-continue" onclick="fpNext()">Continue</button>
+      </div>
+      <p class="fp-footer-note" id="fp-footer-note">You'll hear from us within 24 hours on business days to confirm a time. Your details stay private.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
