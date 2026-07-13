@@ -113,8 +113,51 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
   document.querySelectorAll('.wave-wrap').forEach(init);
 })();
 (function(){
+  const SUPABASE_URL='https://plyediiadzyzahdylmyb.supabase.co';
+  const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBseWVkaWlhZHp5emFoZHlsbXliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMTI5NTIsImV4cCI6MjA3MDU4ODk1Mn0.tgWqzNJsLWOynSd9YtKTxbueZrUtqPj0KXUQw1yDscM';
   let cur=1,adsHist=null;
   function s3(){return adsHist==='running'?'3a':adsHist==='stopped'?'3b':'3c';}
+  function val(id){const el=document.getElementById(id);return el?el.value.trim():'';}
+  function selected(id){const c=document.getElementById(id);if(!c)return null;const opt=c.querySelector('.fp-option.selected');return opt?opt.dataset.val:null;}
+  function selectedMulti(id){const c=document.getElementById(id);if(!c)return [];return Array.from(c.querySelectorAll('.fp-option.selected')).map(o=>o.dataset.val);}
+  async function submitLead(){
+    const bizType=val('f-biz-type');
+    const payload={
+      business_name:val('f-biz-name'),
+      contact_name:val('f-name'),
+      phone:val('f-phone'),
+      email:val('f-email'),
+      location:val('f-location'),
+      business_type:bizType,
+      business_type_other:bizType==='Other'?val('f-other-biz'):null,
+      ads_history:adsHist,
+      ad_platforms:adsHist==='running'?selectedMulti('f-platforms-current'):adsHist==='stopped'?selectedMulti('f-platforms-previous'):null,
+      current_results:adsHist==='running'?selected('f-current-results'):null,
+      ad_spend:adsHist==='running'?selected('f-ad-spend'):null,
+      why_stopped:adsHist==='stopped'?selected('f-why-stopped'):null,
+      why_stopped_other:adsHist==='stopped'&&selected('f-why-stopped')==='other'?val('f-why-stopped-other'):null,
+      previous_budget:adsHist==='stopped'?selected('f-previous-budget'):null,
+      client_sources:adsHist==='never'?selectedMulti('f-client-sources'):null,
+      push_reason:adsHist==='never'?selected('f-push-reason'):null,
+      budget_comfortable:adsHist==='never'?selected('f-budget-comfortable'):null,
+      service_interest:selected('f-service-interest'),
+      primary_goal:selected('f-primary-goal'),
+      timeline:selected('f-timeline'),
+      how_found:selected('f-how-found'),
+      notes:val('f-notes')
+    };
+    const res=await fetch(SUPABASE_URL+'/rest/v1/leadgiggle_site_leads',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'apikey':SUPABASE_ANON_KEY,
+        'Authorization':'Bearer '+SUPABASE_ANON_KEY,
+        'Prefer':'return=minimal'
+      },
+      body:JSON.stringify(payload)
+    });
+    if(!res.ok) throw new Error('Submission failed: '+res.status);
+  }
   function show(s){
     document.querySelectorAll('.fp-step').forEach(el=>el.classList.remove('active'));
     document.getElementById('fp-step-'+s).classList.add('active');
@@ -131,7 +174,22 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
     if(s===2||s==='2'){if(!adsHist){alert('Please select an option to continue.');return false;}}
     return true;
   }
-  window.fpNext=function(){if(!validate(cur))return;if(cur===1||cur==='1'){show(2);return;}if(cur===2||cur==='2'){show(s3());return;}if(['3a','3b','3c'].includes(String(cur))){show(4);return;}if(cur===4){show(5);return;}if(cur===5){show('thankyou');return;}};
+  window.fpNext=function(){
+    if(!validate(cur))return;
+    if(cur===1||cur==='1'){show(2);return;}
+    if(cur===2||cur==='2'){show(s3());return;}
+    if(['3a','3b','3c'].includes(String(cur))){show(4);return;}
+    if(cur===4){show(5);return;}
+    if(cur===5){
+      const cont=document.getElementById('fp-continue');
+      cont.disabled=true;cont.textContent='Submitting…';
+      submitLead().then(()=>{show('thankyou');}).catch(()=>{
+        alert('Something went wrong submitting your details. Please try again.');
+        cont.disabled=false;cont.textContent='Book My Strategy Call';
+      });
+      return;
+    }
+  };
   window.fpBack=function(){if(cur===2){show(1);return;}if(['3a','3b','3c'].includes(String(cur))){show(2);return;}if(cur===4){show(s3());return;}if(cur===5){show(4);return;}};
   document.querySelectorAll('.fp-options:not(.multi) .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.closest('.fp-options').querySelectorAll('.fp-option').forEach(o=>o.classList.remove('selected'));this.classList.add('selected');if(this.closest('#f-ads-history'))adsHist=this.dataset.val;if(this.closest('#f-service-interest'))document.getElementById('meta-note').style.display=this.dataset.val==='meta'?'block':'none';if(this.closest('#f-why-stopped'))document.getElementById('f-stopped-other-wrap').style.display=this.dataset.val==='other'?'flex':'none';});});
   document.querySelectorAll('.fp-options.multi .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.classList.toggle('selected');});});
