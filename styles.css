@@ -1,7 +1,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--navy:#193965;--navy-mid:#1e4575;--navy-dk:#111f38;--orange:#FF6900;--cream:#F7F4EE;--cream-dk:#EDE9E1;--teal:#0DAE9A;--charcoal:#2B2F38;--muted:#8A94A8;--muted-lt:#B0BAC8;--white:#FFFFFF;--bd:rgba(255,255,255,0.09);--bdl:rgba(25,57,101,0.12);color-scheme:light only}
 html{color-scheme:light only}
-body,#hero,.why-card.dark,.why-strategist,.fp-hero,section[style*="background:var(--navy)"]{background-color:#193965 !important}
+body,#hero,.why-card.dark,.why-strategist,.fp-hero,.cs-band-navy,section[style*="background:var(--navy)"]{background-color:#193965 !important}
 .cs-metric{background-color:#1a3560 !important}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -99,6 +99,17 @@ section{padding:96px 0;position:relative}
 .cs-takeaways ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .cs-takeaways ul li{font-size:0.9rem;color:var(--muted);line-height:1.65;display:flex;align-items:flex-start;gap:10px}
 .cs-takeaways ul li::before{content:'';color:var(--orange);flex-shrink:0;font-weight:700}
+.cs-band-navy{background:var(--navy);position:relative}
+.cs-band-light{background:var(--cream);position:relative}
+.cs-narrative.on-light h3{color:var(--navy)}
+.cs-narrative.on-light p{color:#5A6270}
+.cs-narrative.on-light ul li{color:#5A6270}
+.data-table.on-light tr{border-bottom:1px solid var(--bdl)}
+.data-table.on-light td{color:#5A6270}
+.data-table.on-light td:last-child{color:var(--navy)}
+.cs-screenshots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.cs-screenshot-slot{aspect-ratio:16/10;background:rgba(25,57,101,0.04);border:1px dashed rgba(25,57,101,0.18);border-radius:10px;display:flex;align-items:center;justify-content:center;padding:12px}
+.cs-screenshot-slot span{font-size:0.78rem;color:#8A94A8;font-style:italic;text-align:center;line-height:1.4}
 .services-bridge{font-size:1rem;color:#5A6270;max-width:640px;line-height:1.78;margin-top:16px;margin-bottom:52px}
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .service-card{background:var(--white);border:1px solid var(--bdl);border-radius:12px;padding:36px 30px;transition:box-shadow 0.2s}
@@ -247,7 +258,7 @@ footer{background:#fff;border-top:1px solid rgba(25,57,101,0.1);position:relativ
   .container{padding:0 20px}
   .hero-inner{grid-template-columns:1fr}
   .hero-mascot{display:none}
-  .problem-grid,.services-grid,.why-grid{grid-template-columns:1fr}
+  .problem-grid,.services-grid,.why-grid,.cs-screenshots-grid{grid-template-columns:1fr}
   .why-card.dark,.why-strategist{grid-column:1}
   .cs-metrics{grid-template-columns:1fr 1fr}
   .process-step{grid-template-columns:52px 1fr;gap:20px}
