@@ -107,9 +107,10 @@ section{padding:96px 0;position:relative}
 .data-table.on-light tr{border-bottom:1px solid var(--bdl)}
 .data-table.on-light td{color:#5A6270}
 .data-table.on-light td:last-child{color:var(--navy)}
-.cs-screenshots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
-.cs-screenshot-slot{aspect-ratio:16/10;background:rgba(25,57,101,0.04);border:1px dashed rgba(25,57,101,0.18);border-radius:10px;display:flex;align-items:center;justify-content:center;padding:12px}
-.cs-screenshot-slot span{font-size:0.78rem;color:#8A94A8;font-style:italic;text-align:center;line-height:1.4}
+.cs-screenshots-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+.cs-screenshot-slot{background:var(--white);border:1px solid var(--bdl);border-radius:10px;overflow:hidden}
+.cs-screenshot-slot img{width:100%;display:block}
+.cs-screenshot-slot figcaption{padding:9px 12px;font-size:0.78rem;font-weight:500;color:#5A6270;text-align:center;border-top:1px solid var(--bdl)}
 .services-bridge{font-size:1rem;color:#5A6270;max-width:640px;line-height:1.78;margin-top:16px;margin-bottom:52px}
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .service-card{background:var(--white);border:1px solid var(--bdl);border-radius:12px;padding:36px 30px;transition:box-shadow 0.2s}
@@ -137,7 +138,8 @@ section{padding:96px 0;position:relative}
 .why-card.dark p{color:var(--muted)}
 .why-strategist{background:var(--navy);grid-column:1/-1;padding:40px}
 .why-strategist h3{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;color:var(--white);margin-bottom:16px}
-.why-strategist-image{width:100%;height:200px;background:rgba(255,255,255,0.06);border-radius:10px;margin:16px 0;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(255,255,255,0.15)}
+.why-strategist-image{width:120px;height:120px;background:rgba(255,255,255,0.06);border-radius:50%;margin:16px 0;overflow:hidden;border:2px solid rgba(255,255,255,0.15)}
+.why-strategist-image img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
 .why-strategist-image span{font-size:0.8rem;color:rgba(255,255,255,0.3);font-style:italic}
 .why-strategist p{font-size:0.9rem;color:var(--muted);line-height:1.78;margin-bottom:12px}
 .why-strategist .btn{margin-top:8px}
