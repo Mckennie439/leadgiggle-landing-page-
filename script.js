@@ -144,7 +144,8 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
       service_interest:selected('f-service-interest'),
       primary_goal:selected('f-primary-goal'),
       timeline:selected('f-timeline'),
-      how_found:selected('f-how-found'),
+      preferred_call_date:val('f-call-date'),
+      preferred_time_of_day:selected('f-call-time'),
       notes:val('f-notes')
     };
     const res=await fetch(SUPABASE_URL+'/rest/v1/leadgiggle_site_leads',{
@@ -178,6 +179,11 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
   function validate(s){
     if(s===1||s==='1'){const ids=['f-biz-name','f-name','f-phone','f-email','f-location','f-biz-type'];for(const id of ids){const el=document.getElementById(id);if(!el.value.trim()){el.focus();el.style.borderColor='#e05a2b';setTimeout(()=>el.style.borderColor='',1800);return false;}}return true;}
     if(s===2||s==='2'){if(!adsHist){alert('Please select an option to continue.');return false;}}
+    if(s===5||s==='5'){
+      const d=document.getElementById('f-call-date');
+      if(!d.value){d.focus();d.style.borderColor='#e05a2b';setTimeout(()=>d.style.borderColor='',1800);return false;}
+      if(!selected('f-call-time')){alert('Please select a preferred time of day to continue.');return false;}
+    }
     return true;
   }
   window.fpNext=function(){
@@ -200,5 +206,7 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
   document.querySelectorAll('.fp-options:not(.multi) .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.closest('.fp-options').querySelectorAll('.fp-option').forEach(o=>o.classList.remove('selected'));this.classList.add('selected');if(this.closest('#f-ads-history'))adsHist=this.dataset.val;if(this.closest('#f-service-interest'))document.getElementById('meta-note').style.display=this.dataset.val==='meta'?'block':'none';if(this.closest('#f-why-stopped'))document.getElementById('f-stopped-other-wrap').style.display=this.dataset.val==='other'?'flex':'none';});});
   document.querySelectorAll('.fp-options.multi .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.classList.toggle('selected');});});
   document.getElementById('f-biz-type').addEventListener('change',function(){document.getElementById('f-other-wrap').style.display=this.value==='Other'?'flex':'none';});
+  const callDateEl=document.getElementById('f-call-date');
+  if(callDateEl){const t=new Date();callDateEl.min=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');}
   show(1);
 })();
