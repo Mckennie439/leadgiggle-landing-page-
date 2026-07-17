@@ -251,7 +251,30 @@ footer{background:#fff;border-top:1px solid rgba(25,57,101,0.1);position:relativ
 .fp-ty-step-text h4{font-size:0.875rem;font-weight:600;color:var(--navy);margin-bottom:4px}
 .fp-ty-step-text p{font-size:0.85rem;color:#5A6270;line-height:1.65}
 .fp-ty-note{font-size:0.82rem;color:#8A94A8;margin-bottom:24px}
+.legal-page-wrap{background:var(--cream);min-height:100vh}
+.legal-content{max-width:760px;margin:0 auto;padding:148px 32px 96px}
+.legal-back{display:flex;align-items:center;width:fit-content;gap:6px;font-size:0.85rem;font-weight:500;color:var(--muted);text-decoration:none;margin-bottom:28px;transition:color 0.15s}
+.legal-back:hover{color:var(--orange)}
+.legal-content .eyebrow{margin-bottom:8px}
+.legal-title{font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;letter-spacing:-0.02em;color:var(--navy);margin-bottom:32px}
+.legal-content h2{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:var(--navy);margin:44px 0 14px}
+.legal-content h2:first-of-type{margin-top:0}
+.legal-content h3{font-family:'Fraunces',serif;font-size:1rem;font-weight:600;color:var(--navy);margin:24px 0 10px}
+.legal-content p{font-size:0.95rem;color:#5A6270;line-height:1.78;margin-bottom:16px}
+.legal-content ul{margin:0 0 16px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.legal-content ul li{font-size:0.95rem;color:#5A6270;line-height:1.7;padding-left:18px;position:relative}
+.legal-content ul li::before{content:'•';color:var(--orange);position:absolute;left:0;font-weight:700}
+.legal-table-wrap{overflow-x:auto;margin:16px 0 28px}
+.legal-table{width:100%;border-collapse:collapse;font-size:0.9rem}
+.legal-table th{text-align:left;font-family:'Fraunces',serif;font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--orange);padding:0 16px 10px 0;border-bottom:1px solid var(--bdl)}
+.legal-table td{padding:12px 16px 12px 0;color:#5A6270;border-bottom:1px solid var(--bdl);vertical-align:top}
+.legal-table td:first-child{color:var(--navy);font-weight:600;white-space:nowrap}
+.legal-contact-block{background:var(--white);border:1px solid var(--bdl);border-radius:12px;padding:24px 28px;margin:16px 0 32px}
+.legal-contact-block p{margin-bottom:6px}
+.legal-contact-block a{color:var(--navy);text-decoration:none;font-weight:600}
+.legal-contact-block a:hover{color:var(--orange)}
 @media(max-width:860px){
+  .legal-content{padding:120px 20px 64px}
   html{font-size:15px}
   nav{padding:12px 20px}
   .nav-desktop{display:none}
