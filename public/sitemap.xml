@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Official Domain Sitemap - Optimized for Google Knowledge Panel & Sitelink Eligibility -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Primary Top-Level Pages - Core Authority Structure -->
+
+  <!-- 1. Homepage - Primary Entity Hub -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hero-images/spaces-designed-around-your-story-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>Top Interior Design Company in Kenya - Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. About - Brand Identity & Context -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/about</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/about-avalanche-creations-interior-design-studio.jpeg</image:loc>
+      <image:caption>About Avalanche Creations - Trusted Interior Designers in Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Services - Core Offering Overview -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/interior-design-services-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>Interior Design Services in Kenya - Residential &amp; Commercial</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 4. Process - Methodology & Approach -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/process</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/the-7-step-interior-design-process-avalance-creations.jpg</image:loc>
+      <image:caption>Interior Design Process - Clear, Collaborative &amp; Thoughtful</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 5. Portfolio - Social Proof & Work Examples -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/interior-design-services-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>Interior Design Portfolio - Residential &amp; Commercial Projects Kenya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 6. Read (Blog) - Insights & Authority Content -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/interior-design-services-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>Interior Design Journal - Insights &amp; Stories by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 7. Contact (Quote) - Conversion Point -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/quote</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/contact-avalanche-creations-interior-design.jpg</image:loc>
+      <image:caption>Request an Interior Design Quote - Contact Avalanche Creations Nairobi</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Service Detail Pages (Supporting Content) -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services/full-design-services-kenya</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/full-service-interior-design-kenya.jpg</image:loc>
+      <image:caption>Full Interior Design Services - Thoughtful, Custom Interiors</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services/renovations</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/home-renovation-interior-design-nairobi-kenya.jpg</image:loc>
+      <image:caption>Home Renovation Services - Design-Led Transformations</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services/furnishing</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/home-furnishing-and-styling-nairobi-kenya.jpg</image:loc>
+      <image:caption>Home Furnishing Services - Curated, Cohesive Living</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services/custom-furniture</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/custom-furniture-design-kenya-interiors.jpg</image:loc>
+      <image:caption>Custom Furniture Design - Pieces Made to Belong</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/services/virtual-design</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/virtual-interior-design-services-nairobi-kenya.jpg</image:loc>
+      <image:caption>Virtual Interior Design Services - Design, Delivered Remotely</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/privacy-policy</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Landing Page — Interior Design Nairobi -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/interior-design-nairobi</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hero-images/custom-timeless-interior-design-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>Interior Design Company in Nairobi — Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- Portfolio Project Detail Pages -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/karen-wellness-lounge</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/karenwellnesscentre-images/karen-03-wellness-centre-avalanche-creations.jpg</image:loc>
+      <image:caption>Karen Wellness Lounge — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/thome-garden-estate-bathroom</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/thomebathroomrenovation-images/thome-bathroom-renovation-bespoke-shelving.jpg</image:loc>
+      <image:caption>A Boutique Sanctuary Reimagined — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/kikuyu</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kiambucountyhomerenovation-images/kiambu-county-home-renovations-interior-styling.jpg</image:loc>
+      <image:caption>Kikuyu — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/kindaruma-homes</loc>
+    <lastmod>2025-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kilimaniairbnb-images/airbnb-kilimani-nairobi-dining-04.jpg</image:loc>
+      <image:caption>Kindaruma Homes — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/kahawa-west</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hilltopapartment-images/hilltop-apartment-kahawa-west-custom-furniture-detail-avalanche-creations.jpg</image:loc>
+      <image:caption>Hilltop Apartment — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/ciata-mall</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/primelanddevelopers-images/ciata-mall-conference-room-prime-land-developers.jpg</image:loc>
+      <image:caption>PLD HQ — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/rongai-remodel</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/rongai-images/rongai-living-room-renovation (2).jpg</image:loc>
+      <image:caption>Classic Home Remodel — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/kitengela-townhouse</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kitengelatownhousereimagined-images/kitengela-dining-area-update (2).jpg</image:loc>
+      <image:caption>Townhouse Reimagined — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/contemporary-store</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/contemporarystore-images/store-styling-details-modern (2).jpg</image:loc>
+      <image:caption>Contemporary Store — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/portfolio/wellness-centre</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kiamburoad-images/kiambu-road-confrence-room-lighting (2).jpg</image:loc>
+      <image:caption>Wellness Centre — Interior Design Project by Avalanche Creations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post Pages -->
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/common-renovation-mistakes-homeowners-kenya-avoid-costly-regrets</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/modern-kitchen-renovation-interior-design-kenya.jpeg</image:loc>
+      <image:caption>Common Renovation Mistakes Homeowners Make in Kenya — And How to Avoid Costly Regrets</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/behind-the-walls-true-costs-renovating-home-kenya</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/modern-kitchen-island-open-plan-kenya-home-renovation.jpeg</image:loc>
+      <image:caption>Behind the Walls: The True Costs of Renovating a Home in Kenya</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/how-to-design-home-that-feels-personal-not-cookie-cutter</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/hearth-style-living-room-personal-interior-design-nairobi.jpg</image:loc>
+      <image:caption>How to Design a Home That Feels Personal, Not Cookie-Cutter</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-design-new-builds-kenya-what-to-plan-early</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/luxury-new-build-home-kenya-interior-design-planning.jpeg</image:loc>
+      <image:caption>Interior Design for New Builds in Kenya: What to Plan Early</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/9-interior-design-trends-2026</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/modern-luxury-living-room-2026-interior-design-trends-kenya.jpeg</image:loc>
+      <image:caption>9 Interior Design Trends We're Excited to Embrace in 2026</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-design-mistakes-that-make-home-feel-smaller</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/living-room-design-mistakes-space-planning-nairobi-kenya.jpg</image:loc>
+      <image:caption>Interior Design Mistakes That Make Your Home Feel Smaller (and How to Fix Them)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-design-pitfalls-what-people-get-wrong-before-hiring-designer</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/interior-design-process-moodboards-planning-nairobi.jpg</image:loc>
+      <image:caption>Interior Design Pitfalls: What Most People Get Wrong Before Hiring a Designer (and How to Get It Right)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/top-interior-design-companies-kenya-what-sets-best-apart</loc>
+    <lastmod>2025-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/high-end-interior-design-office-nairobi.jpg</image:loc>
+      <image:caption>Top Interior Design Companies in Kenya: What Truly Sets the Best Apart</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/9-things-that-make-home-look-cheap-avalanche-creations-designs-beyond</loc>
+    <lastmod>2025-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/layered-bedroom-elevated-interior-design-kenya.jpeg</image:loc>
+      <image:caption>9 Things That Make a Home Look Cheap, And How Avalanche Creations Designs Beyond Them</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/from-vision-to-reality-navigating-interior-design-process-kenya</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/from-vision-to-reality-interior-design-process.jpeg</image:loc>
+      <image:caption>From Vision to Reality: Navigating the Interior Design Process in Kenya</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/why-custom-furniture-kenya-leading-personalized-interiors</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/custom-furniture-modern-luxury-living-room-kenya.jpeg</image:loc>
+      <image:caption>Why Custom Furniture Kenya is leading the way to personalized interiors.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-design-costs-kenya-complete-guide-2026</loc>
+    <lastmod>2025-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/cost-of-interior-services-kenya-avalanche-creations.jpg</image:loc>
+      <image:caption>How Much Does It Cost to Hire an Interior Design Company in Kenya? (Complete Guide 2026)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/how-to-prepare-for-interior-design-consultation</loc>
+    <lastmod>2025-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/preparing-for-your-interior-design-consultation.jpg</image:loc>
+      <image:caption>How to Prepare for Your Interior Design Consultation</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/what-to-expect-working-with-interior-designer-kenya</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/what-to-expect-working-with-an-interior-design-kenya.jpg</image:loc>
+      <image:caption>What to Expect When Working with an Interior Designer in Kenya</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-designer-or-contractor-why-design-should-lead-before-renovation-begins</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/thome-kitchen-renovation-design-first-approach.jpeg</image:loc>
+      <image:caption>Interior Designer or Contractor? Why Design Should Lead Before Renovation Begins</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/how-to-choose-right-interior-design-company-kenya-without-regret</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/open-layout-office-interior-design-kenya.jpeg</image:loc>
+      <image:caption>How to Choose the Right Interior Design Company in Kenya (Without Regret)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/cost-of-home-furnishing-kenya-what-to-budget-and-why</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kilimaniairbnb-images/airbnb-kilimani-nairobi-dining-10.jpg</image:loc>
+      <image:caption>The Cost of Home Furnishing in Kenya: What to Budget and Why</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/common-home-furnishing-mistakes-how-designers-avoid-them</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hilltopapartment-images/hilltop-apartment-kahawa-west-decorative-lighting-detail-avalanche-creations.jpg</image:loc>
+      <image:caption>Common Home Furnishing Mistakes (And How Designers Avoid Them)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/what-home-furnishing-really-means-why-most-homes-get-it-wrong</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hilltopapartment-images/hilltop-apartment-kahawa-west-furnished-living-room-avalanche-creations.jpg</image:loc>
+      <image:caption>What Home Furnishing Really Means (And Why Most Homes Get It Wrong)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/custom-furniture-vs-ready-made-what-works-for-kenyan-homes</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/hilltopapartment-images/hilltop-apartment-kahawa-west-entryway-furnishing-detail-avalanche-creations.jpg</image:loc>
+      <image:caption>Custom Furniture vs Ready-Made: What Works for Kenyan Homes</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/why-empty-space-isnt-wasted-space-how-it-makes-rooms-feel-better</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/hilltop-apartment-kahawa-west-home-furnishing-project.jpg</image:loc>
+      <image:caption>Why Empty Space Isn't Wasted Space (And How It Makes Rooms Feel Better)</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/interior-design-decisions-youll-appreciate-five-years-from-now</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/thome-kitchen-renovation-timeless-interior-design.jpeg</image:loc>
+      <image:caption>Interior Design Decisions You'll Appreciate Five Years From Now</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/how-to-know-if-your-design-investment-will-last</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/kiambucountyhomerenovation-images/kiambu-county-home-renovations-living-room-natural-lighting.jpg</image:loc>
+      <image:caption>How to Know If Your Design Investment Will Last</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.avalanchecreations.co.ke/blog/how-to-mix-metals-in-a-bathroom-without-it-looking-chaotic</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ykndyjgvochvehwimhhq.supabase.co/storage/v1/object/public/Website%20Assests/banner-images/thome-bathroom-renovation-mixed-metal-fixtures-design.jpeg</image:loc>
+      <image:caption>How to Mix Metals in a Bathroom (Without It Looking Chaotic)</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

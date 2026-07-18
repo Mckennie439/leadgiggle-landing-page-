@@ -1,0 +1,60 @@
+# Official Domain: www.avalanchecreations.co.ke
+# Enhanced SEO Configuration
+
+# Primary domain - allow all crawling
+User-agent: *
+Allow: /
+Allow: /portfolio/
+Allow: /services/
+Allow: /blog/
+Allow: /process
+Allow: /about
+Allow: /watch
+Allow: /shop
+
+# Allow all image formats for indexing
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+Allow: /hero-images/
+Allow: /banner-images/
+Allow: /hilltopapartment-images/
+Allow: /kiambucountyhomerenovation-images/
+Allow: /kiamburoad-images/
+Allow: /kilimaniairbnb-images/
+Allow: /kitengelatownhousereimagined-images/
+Allow: /primelanddevelopers-images/
+Allow: /rongai-images/
+Allow: /contemporarystore-images/
+
+# Explicitly allow key pages
+Allow: /services
+Allow: /services/*
+Allow: /quote
+
+# Sitemaps
+Sitemap: https://www.avalanchecreations.co.ke/sitemap.xml
+
+# Note: preview/staging deployments (e.g. *.vercel.app) are kept out of the
+# index via the noindex meta tag injected at runtime for non-production
+# hostnames (see index.html) — Vercel also sends X-Robots-Tag: noindex on
+# preview deployments automatically. robots.txt itself is host-specific and
+# cannot block crawling of a different host, so no rules are needed here.
+
+# Crawl optimization
+Crawl-delay: 10
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/
+Disallow: /admin/
+Disallow: /.well-known/
+
+# Allow important query parameters for tracking
+Allow: /*?utm_*
+Allow: /*?ref=*
+Allow: /*?source=*

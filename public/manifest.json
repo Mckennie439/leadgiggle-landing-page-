@@ -1,0 +1,37 @@
+{
+  "name": "Avalanche Creations",
+  "short_name": "Avalanche",
+  "description": "Premier Interior Design Studio in Kenya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#8B4513",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/gchJvBtB/avalanchecreations-logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://i.postimg.cc/gchJvBtB/avalanchecreations-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "categories": ["design", "interior", "home", "business"],
+  "shortcuts": [
+    {
+      "name": "Request Quote",
+      "url": "/quote",
+      "description": "Request a quote for your project"
+    },
+    {
+      "name": "View Portfolio",
+      "url": "/portfolio",
+      "description": "Browse our project portfolio"
+    }
+  ]
+}

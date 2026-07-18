@@ -1,0 +1,4 @@
+Contact: mailto:avalanchecreationlimited@gmail.com
+Expires: 2027-07-18T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://www.avalanchecreations.co.ke/.well-known/security.txt
