@@ -156,6 +156,10 @@ section{padding:96px 0;position:relative}
 .qual-check.yes{background:rgba(255,105,0,0.15)}
 .qual-check.no{background:rgba(255,255,255,0.06)}
 .qual-check svg{width:10px;height:10px}
+.qual-closing{margin-top:56px;padding-top:48px;border-top:1px solid var(--bd);text-align:center;max-width:680px;margin-left:auto;margin-right:auto}
+.qual-closing-title{font-family:'Fraunces',serif;font-size:clamp(1.5rem,3.2vw,2rem);font-weight:700;color:var(--white);letter-spacing:-0.02em;line-height:1.2;margin-bottom:20px}
+.qual-closing p{font-size:0.95rem;color:var(--muted);line-height:1.78;margin-bottom:12px}
+.qual-closing p:last-child{margin-bottom:0}
 
 .faq-list{margin-top:48px;border-radius:12px;overflow:hidden;border:1px solid var(--bdl)}
 .faq-item{border-bottom:1px solid var(--bdl)}
