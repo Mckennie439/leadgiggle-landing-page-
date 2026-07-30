@@ -24,7 +24,7 @@
 
 <nav id="main-nav" class="diag-nav">
   <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></a>
-  <button class="btn btn-primary nav-book-btn" onclick="showForm()">Book a Strategy Call</button>
+  <button class="btn btn-primary nav-book-btn" onclick="showForm()">Get Your Free Analysis</button>
 </nav>
 
 <div id="page-lp">
@@ -335,17 +335,18 @@
 
 <section class="diag-block-tight" id="strategy-conversation">
   <div class="container diag-closing-block">
-    <h2 class="diag-block-heading">The Strategy Conversation</h2>
-    <p>This guide is designed to help you recognise where customer acquisition systems commonly break down.</p>
-    <p>Determining which of those constraints applies to your business requires understanding the business itself.</p>
-    <p>During the strategy conversation, we'll explore four questions:</p>
+    <h2 class="diag-block-heading">Get A Free Analysis Of Where You Stand</h2>
+    <p>This guide is designed to help you recognise where customer acquisition systems commonly break down. Confirming which of those constraints actually applies to your business requires a closer look.</p>
+    <p>Get a free analysis, no call required. Just a short form covering your business, what you've already tried, and what you'd most like to see improved. From there, a focused look at where your constraint likely sits.</p>
+    <div style="display:flex;justify-content:center;margin:28px 0"><button class="btn btn-primary" onclick="showForm()">Get Your Free Analysis</button></div>
+    <p>If it points to something worth going deeper on, the next step is a short strategy conversation, working through four questions:</p>
     <ol class="diag-qlist">
       <li>How does your business currently acquire customers?</li>
       <li>Where do your highest-value projects come from?</li>
       <li>What are you trying to achieve over the next 12 months?</li>
       <li>What's the biggest constraint preventing you from getting there?</li>
     </ol>
-    <p>Only after answering those questions do we determine whether there's an opportunity to improve your customer acquisition system, and what the most appropriate path forward looks like.</p>
+    <p>Only after that do we determine whether there's a real opportunity to improve your customer acquisition system, and what the most appropriate path forward looks like.</p>
     <p>We don't sell channels. We approach customer acquisition around what your business actually needs:</p>
 
     <div class="diag-triad">
@@ -353,8 +354,6 @@
       <div class="diag-triad-card"><strong>Creating and nurturing demand</strong><p>Reaching people who don't know they need you yet, and staying visible until they do</p></div>
       <div class="diag-triad-card"><strong>Qualifying and converting existing demand</strong><p>Making sure the interest you already have turns into revenue, not lost enquiries</p></div>
     </div>
-
-    <p>Google Ads, Meta Ads, SEO, AI search visibility, websites, and content are all components we may recommend, depending on which of those three jobs your business actually needs done.</p>
   </div>
 </section>
 
@@ -394,21 +393,19 @@
   <div class="fp-hero">
     <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
     <div class="container fp-hero-inner" style="position:relative;z-index:2">
-      <span class="eyebrow">Let's See Where Your Business Stands</span>
+      <span class="eyebrow">Get Your Free Analysis</span>
       <h1>Tell Us About Your Business</h1>
-      <h2>The information you provide helps us understand your current situation before the conversation begins.</h2>
-      <p>We'll look at your business, your market, your current lead sources, and where opportunities may be getting lost so the discussion is focused on your actual growth challenges.</p>
-      <p>The goal is to understand whether there is a realistic opportunity to build a stronger customer acquisition system for your business.</p>
-      <p>If there is a clear path forward, it will be outlined. If a different direction makes more sense, you'll leave with clarity on that as well.</p>
+      <h2>The information you provide shapes a focused analysis of where your business might be losing opportunities, and where the biggest wins might be.</h2>
+      <p>No call required to get it, if it leads somewhere worth exploring further, that's a conversation for after you've seen it.</p>
       <p style="margin-top:12px;font-size:0.82rem;color:rgba(255,255,255,0.4)">It takes about 2 minutes to complete.</p>
     </div>
   </div>
   <div class="fp-body">
     <div class="fp-progress-track"><div class="fp-progress-bar" id="fp-bar"></div></div>
-    <div class="fp-step-labels"><span data-step="1">Business</span><span data-step="2">Background</span><span data-step="3">History</span><span data-step="4">Goals</span><span data-step="5">Timeline</span></div>
+    <div class="fp-step-labels"><span data-step="1">Business</span><span data-step="2">Situation</span><span data-step="3">Goals</span><span data-step="4">Timeline</span></div>
     <div class="fp-card">
       <div class="fp-step active" id="fp-step-1">
-        <div class="fp-step-title">Step 1 of 5: Business Details</div>
+        <div class="fp-step-title">Step 1 of 4: Business Details</div>
         <div class="fp-grid-2">
           <div class="fp-field"><label>Business Name <span class="req">*</span></label><input type="text" id="f-biz-name" placeholder="e.g. Sunray Solar Ltd"/></div>
           <div class="fp-field"><label>Your Name <span class="req">*</span></label><input type="text" id="f-name" placeholder="First and last name"/></div>
@@ -420,52 +417,36 @@
         <div class="fp-field-full" id="f-other-wrap" style="display:none"><label>Please describe your business</label><input type="text" id="f-other-biz" placeholder="Brief description"/></div>
       </div>
       <div class="fp-step" id="fp-step-2">
-        <div class="fp-step-title">Step 2 of 5: Marketing Background</div>
-        <div class="fp-field-full no-top"><label>Have you run paid ads before?</label><div class="fp-options" id="f-ads-history"><div class="fp-option" data-val="running">Yes, I'm currently running ads</div><div class="fp-option" data-val="stopped">Yes, I've run ads before but stopped</div><div class="fp-option" data-val="never">No, I've never run paid ads</div></div></div>
+        <div class="fp-step-title">Step 2 of 4: Current Situation</div>
+        <div class="fp-field-full no-top"><label>Website URL <span class="req">*</span></label><input type="text" id="f-website" placeholder="e.g. www.yourbusiness.com"/></div>
+        <div class="fp-field-full"><label>Social media handle or main platform link <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><input type="text" id="f-social" placeholder="e.g. @yourbusiness or a link"/></div>
+        <div class="fp-field-full"><label>What are you currently doing for customer acquisition? <span class="req">*</span></label><select id="f-current-acquisition"><option value="">Select an option</option><option value="meta-ads">Running Meta Ads</option><option value="google-ads">Running Google Ads</option><option value="organic-only">Just social media and local visibility, no paid ads</option><option value="referrals">Relying mostly on referrals</option><option value="mix">A mix of the above</option><option value="not-much">Not doing much at all right now</option></select></div>
+        <div class="fp-field-full" id="f-ad-budget-wrap" style="display:none"><label>Roughly what's your monthly ad budget? <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><select id="f-ad-budget"><option value="">Select a range</option><option value="u100">Under $100/month</option><option value="100-300">$100–$300/month</option><option value="300-500">$300–$500/month</option><option value="500-1000">$500–$1,000/month</option><option value="o1000">Over $1,000/month</option><option value="prefer-not">Prefer not to say</option></select></div>
+        <div class="fp-field-full"><label>Who currently handles your customer acquisition? <span class="req">*</span></label><select id="f-acquisition-owner"><option value="">Select an option</option><option value="in-house">An in-house team member</option><option value="agency">An agency or freelancer</option><option value="me">Me personally, no dedicated help</option><option value="nobody">Nobody right now, it's been neglected</option></select></div>
+        <div class="fp-field-full"><label>Going forward, are you looking to hire this out, or build internal capability? <span class="req">*</span></label><select id="f-acquisition-direction"><option value="">Select an option</option><option value="hire-out">Looking for a partner to run this for us</option><option value="in-house">Looking to build our own in-house capability</option><option value="not-sure">Not sure yet, open to either</option></select></div>
       </div>
-      <div class="fp-step" id="fp-step-3a">
-        <div class="fp-step-title">Step 3 of 5: Your Current Ads</div>
-        <div class="fp-field-full no-top"><label>Which platforms are you currently on? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi" id="f-platforms-current"><div class="fp-option" data-val="google">Google Ads</div><div class="fp-option" data-val="meta">Meta Ads (Facebook / Instagram)</div><div class="fp-option" data-val="tiktok">TikTok Ads</div><div class="fp-option" data-val="other">Other</div></div></div>
-        <div class="fp-field-full"><label>How would you describe your current results?</label><div class="fp-options" id="f-current-results"><div class="fp-option" data-val="poor">Getting leads but quality is poor</div><div class="fp-option" data-val="inconsistent">Getting some leads but volume is inconsistent</div><div class="fp-option" data-val="little-return">Spending money but seeing very little return</div><div class="fp-option" data-val="scale">Results are okay but I want to scale</div></div></div>
-        <div class="fp-field-full"><label>Current monthly ad spend?</label><div class="fp-options" id="f-ad-spend"><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-1000">$500 – $1,000/month</div><div class="fp-option" data-val="o1000">Over $1,000/month</div></div></div>
-      </div>
-      <div class="fp-step" id="fp-step-3b">
-        <div class="fp-step-title">Step 3 of 5: Previous Ad Experience</div>
-        <div class="fp-field-full no-top"><label>Which platforms did you use? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi" id="f-platforms-previous"><div class="fp-option" data-val="google">Google Ads</div><div class="fp-option" data-val="meta">Meta Ads (Facebook / Instagram)</div><div class="fp-option" data-val="tiktok">TikTok Ads</div><div class="fp-option" data-val="other">Other</div></div></div>
-        <div class="fp-field-full"><label>Why did you stop?</label><div class="fp-options" id="f-why-stopped"><div class="fp-option" data-val="no-results">Didn't see results</div><div class="fp-option" data-val="expensive">Too expensive for what came back</div><div class="fp-option" data-val="no-manager">Didn't have someone to manage it properly</div><div class="fp-option" data-val="budget">Budget constraints at the time</div><div class="fp-option" data-val="other">Other</div></div></div>
-        <div class="fp-field-full" id="f-stopped-other-wrap" style="display:none"><label>Please specify</label><input type="text" id="f-why-stopped-other" placeholder=""/></div>
-        <div class="fp-field-full"><label>Current monthly marketing budget?</label><div class="fp-options" id="f-previous-budget"><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-1000">$500 – $1,000/month</div><div class="fp-option" data-val="o1000">Over $1,000/month</div></div></div>
-      </div>
-      <div class="fp-step" id="fp-step-3c">
-        <div class="fp-step-title">Step 3 of 5: How You Currently Get Clients</div>
-        <div class="fp-field-full no-top"><label>How are you currently getting clients? <span class="fp-multi-hint">(select all that apply)</span></label><div class="fp-options multi" id="f-client-sources"><div class="fp-option" data-val="referrals">Referrals / Word of mouth</div><div class="fp-option" data-val="social">Social media (organic)</div><div class="fp-option" data-val="walkin">Walk-ins / Physical location</div><div class="fp-option" data-val="content">TikTok / YouTube content</div><div class="fp-option" data-val="inconsistent">Leads have been inconsistent</div><div class="fp-option" data-val="other">Other</div></div></div>
-        <div class="fp-field-full"><label>What's pushing you toward paid advertising now?</label><div class="fp-options" id="f-push-reason"><div class="fp-option" data-val="not-enough">Referrals aren't enough anymore</div><div class="fp-option" data-val="grow-faster">I want to grow faster than word of mouth allows</div><div class="fp-option" data-val="relaunch">I'm relaunching or scaling the business</div><div class="fp-option" data-val="competitor">A competitor is running ads and winning</div><div class="fp-option" data-val="overdue">I've been putting this off long enough</div></div></div>
-        <div class="fp-field-full"><label>Monthly budget you're comfortable investing?</label><div class="fp-options" id="f-budget-comfortable"><div class="fp-option" data-val="unsure">Not sure yet: need guidance</div><div class="fp-option" data-val="u100">Under $100/month</div><div class="fp-option" data-val="100-300">$100 – $300/month</div><div class="fp-option" data-val="300-500">$300 – $500/month</div><div class="fp-option" data-val="500-plus">$500+/month</div></div></div>
+      <div class="fp-step" id="fp-step-3">
+        <div class="fp-step-title">Step 3 of 4: What You're Looking For</div>
+        <div class="fp-field-full no-top"><label>What are you most hoping to get out of this analysis? <span class="req">*</span></label><input type="text" id="f-analysis-goal" placeholder="Tell us what you're hoping to learn"/></div>
+        <div class="fp-field-full"><label>What would you most like to see improve in your business? <span class="req">*</span></label><input type="text" id="f-improve-area" placeholder="Tell us what you'd like to see change"/></div>
       </div>
       <div class="fp-step" id="fp-step-4">
-        <div class="fp-step-title">Step 4 of 5: What You Need</div>
-        <div class="fp-field-full no-top"><label>Which part of the system interests you most?</label><div class="fp-options" id="f-service-interest"><div class="fp-option" data-val="google-ads">Google Ads Lead Generation</div><div class="fp-option" data-val="automation">Lead Qualification &amp; Automation Systems</div><div class="fp-option" data-val="both">Both: leads and a system to handle them</div><div class="fp-option" data-val="meta">Meta Ads</div><div class="fp-option" data-val="unsure">Not sure yet: need to understand what's right first</div></div><div class="fp-info-note" id="meta-note" style="display:none">Meta eligibility is discussed during the strategy call based on your budget and business fit.</div></div>
-        <div class="fp-field-full"><label>What's the primary goal right now?</label><div class="fp-options" id="f-primary-goal"><div class="fp-option" data-val="more-leads">Generate more leads consistently</div><div class="fp-option" data-val="better-leads">Improve the quality of leads already coming in</div><div class="fp-option" data-val="convert">Convert more existing enquiries into paying clients</div><div class="fp-option" data-val="full-system">Build a full customer acquisition system</div><div class="fp-option" data-val="explore">Understand what's realistic before deciding</div></div></div>
-      </div>
-      <div class="fp-step" id="fp-step-5">
-        <div class="fp-step-title">Step 5 of 5: Last Step</div>
-        <div class="fp-field-full no-top"><label>How soon are you hoping to get started?</label><div class="fp-options" id="f-timeline"><div class="fp-option" data-val="now">Ready now</div><div class="fp-option" data-val="30-days">Within the next 30 days</div><div class="fp-option" data-val="90-days">Within the next 90 days</div><div class="fp-option" data-val="research">Still in research mode</div></div></div>
-        <div class="fp-field-full"><label>Preferred call date <span class="req">*</span></label><input type="date" id="f-call-date"/></div>
-        <div class="fp-field-full"><label>Preferred time of day <span class="req">*</span></label><div class="fp-options" id="f-call-time"><div class="fp-option" data-val="morning">Morning</div><div class="fp-option" data-val="afternoon">Afternoon</div><div class="fp-option" data-val="evening">Evening</div></div></div>
-        <div class="fp-field-full"><label>Anything we should know before the call? <span style="font-weight:400;color:#8A94A8">(Optional: e.g. specific profit targets, challenges, or questions)</span></label><textarea id="f-notes" rows="3" placeholder="Any context that would help us prepare for the conversation"></textarea></div>
+        <div class="fp-step-title">Step 4 of 4: Timeline &amp; Notes</div>
+        <div class="fp-field-full no-top"><label>How soon are you hoping to see improvement? <span class="req">*</span></label><select id="f-timeline"><option value="">Select an option</option><option value="urgent">Urgent — within 30 days</option><option value="1-3-months">Not urgent, but I'd like performance to start improving in the next 1–3 months</option><option value="no-rush">No rush, happy with my current system, but I think it could be better</option></select></div>
+        <div class="fp-field-full"><label>Anything else we should know? <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><textarea id="f-notes" rows="3" placeholder="Any context that would help us prepare your analysis"></textarea></div>
       </div>
       <div class="fp-step" id="fp-step-thankyou">
         <div class="fp-ty">
           <div class="fp-ty-icon">✓</div>
           <h2>Received.</h2>
-          <h3>Your Strategy Call Request Has Been Received.</h3>
-          <p class="fp-ty-intro">Before the conversation happens, the details you shared will be reviewed so we can understand your business context properly.</p>
+          <h3>Your Free Analysis Request Has Been Received.</h3>
+          <p class="fp-ty-intro">Before your analysis is prepared, the details you shared will be reviewed so we can understand your business context properly.</p>
           <div class="fp-ty-steps">
             <div class="fp-ty-step"><div class="fp-ty-step-num">1</div><div class="fp-ty-step-text"><h4>Your Business Gets Reviewed</h4><p>We'll look at your industry, current acquisition approach, challenges, and what you're trying to achieve.</p></div></div>
-            <div class="fp-ty-step"><div class="fp-ty-step-num">2</div><div class="fp-ty-step-text"><h4>The Opportunity Gets Assessed</h4><p>The conversation will focus on where growth may be limited, what is currently working, and where a stronger customer acquisition system could create improvement.</p></div></div>
+            <div class="fp-ty-step"><div class="fp-ty-step-num">2</div><div class="fp-ty-step-text"><h4>The Opportunity Gets Assessed</h4><p>The analysis will focus on where growth may be limited, what is currently working, and where a stronger customer acquisition system could create improvement.</p></div></div>
             <div class="fp-ty-step"><div class="fp-ty-step-num">3</div><div class="fp-ty-step-text"><h4>The Direction Becomes Clear</h4><p>If there is a strong opportunity to work together, the next steps will be mapped out. If the business needs a different approach first, that will be explained clearly.</p></div></div>
           </div>
-          <p class="fp-ty-note">You'll hear from us within 24 hours on business days to confirm your call time.</p>
+          <p class="fp-ty-note">You'll receive your free analysis within 1 hour.</p>
           <button class="btn btn-primary" onclick="hideForm()">Back To The Guide</button>
         </div>
       </div>
@@ -473,7 +454,7 @@
         <button class="fp-back-btn" id="fp-back" onclick="fpBack()" disabled>← Back</button>
         <button class="btn btn-primary fp-continue-btn" id="fp-continue" onclick="fpNext()">Continue</button>
       </div>
-      <p class="fp-footer-note" id="fp-footer-note">You'll hear from us within 24 hours on business days to confirm a time. Your details stay private.</p>
+      <p class="fp-footer-note" id="fp-footer-note">You'll receive your free analysis within 1 hour. If it points to a real opportunity, we can set up a short strategy call from there.</p>
     </div>
   </div>
 </div>

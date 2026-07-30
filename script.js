@@ -116,13 +116,11 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
   const SUPABASE_URL='https://plyediiadzyzahdylmyb.supabase.co';
   const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBseWVkaWlhZHp5emFoZHlsbXliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMTI5NTIsImV4cCI6MjA3MDU4ODk1Mn0.tgWqzNJsLWOynSd9YtKTxbueZrUtqPj0KXUQw1yDscM';
   const MAKE_WEBHOOK_URL='https://hook.eu2.make.com/x7hd0oiuc9rxgsoskhhx6zwki5oeycwi';
-  let cur=1,adsHist=null;
-  function s3(){return adsHist==='running'?'3a':adsHist==='stopped'?'3b':'3c';}
+  let cur=1;
   function val(id){const el=document.getElementById(id);return el?el.value.trim():'';}
-  function selected(id){const c=document.getElementById(id);if(!c)return null;const opt=c.querySelector('.fp-option.selected');return opt?opt.dataset.val:null;}
-  function selectedMulti(id){const c=document.getElementById(id);if(!c)return [];return Array.from(c.querySelectorAll('.fp-option.selected')).map(o=>o.dataset.val);}
   async function submitLead(){
     const bizType=val('f-biz-type');
+    const acquisition=val('f-current-acquisition');
     const payload={
       business_name:val('f-biz-name'),
       contact_name:val('f-name'),
@@ -131,21 +129,15 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
       location:val('f-location'),
       business_type:bizType,
       business_type_other:bizType==='Other'?val('f-other-biz'):null,
-      ads_history:adsHist,
-      ad_platforms:adsHist==='running'?selectedMulti('f-platforms-current'):adsHist==='stopped'?selectedMulti('f-platforms-previous'):null,
-      current_results:adsHist==='running'?selected('f-current-results'):null,
-      ad_spend:adsHist==='running'?selected('f-ad-spend'):null,
-      why_stopped:adsHist==='stopped'?selected('f-why-stopped'):null,
-      why_stopped_other:adsHist==='stopped'&&selected('f-why-stopped')==='other'?val('f-why-stopped-other'):null,
-      previous_budget:adsHist==='stopped'?selected('f-previous-budget'):null,
-      client_sources:adsHist==='never'?selectedMulti('f-client-sources'):null,
-      push_reason:adsHist==='never'?selected('f-push-reason'):null,
-      budget_comfortable:adsHist==='never'?selected('f-budget-comfortable'):null,
-      service_interest:selected('f-service-interest'),
-      primary_goal:selected('f-primary-goal'),
-      timeline:selected('f-timeline'),
-      preferred_call_date:val('f-call-date'),
-      preferred_time_of_day:selected('f-call-time'),
+      website:val('f-website'),
+      social:val('f-social'),
+      current_acquisition:acquisition,
+      ad_budget:(acquisition==='meta-ads'||acquisition==='google-ads')?val('f-ad-budget'):null,
+      acquisition_owner:val('f-acquisition-owner'),
+      acquisition_direction:val('f-acquisition-direction'),
+      analysis_goal:val('f-analysis-goal'),
+      improve_area:val('f-improve-area'),
+      timeline:val('f-timeline'),
       notes:val('f-notes')
     };
     const res=await fetch(SUPABASE_URL+'/rest/v1/leadgiggle_site_leads',{
@@ -169,44 +161,37 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
     document.querySelectorAll('.fp-step').forEach(el=>el.classList.remove('active'));
     document.getElementById('fp-step-'+s).classList.add('active');
     cur=s;
-    const n=(['3a','3b','3c'].includes(String(s)))?3:(s==='thankyou'?6:parseInt(s));
-    document.getElementById('fp-bar').style.width=Math.min((n/5)*100,100)+'%';
+    const n=(s==='thankyou')?4:parseInt(s);
+    document.getElementById('fp-bar').style.width=Math.min((n/4)*100,100)+'%';
     document.querySelectorAll('.fp-step-labels span').forEach(el=>el.classList.toggle('active',parseInt(el.dataset.step)<=n));
     const nb=document.getElementById('fp-nav-btns'),note=document.getElementById('fp-footer-note'),back=document.getElementById('fp-back'),cont=document.getElementById('fp-continue');
     if(s==='thankyou'){nb.style.display='none';if(note)note.style.display='none';}
-    else{nb.style.display='flex';if(note)note.style.display='block';back.disabled=(s===1||s==='1');cont.textContent=(s===5||s==='5')?'Book My Strategy Call':'Continue';}
+    else{nb.style.display='flex';if(note)note.style.display='block';back.disabled=(s===1||s==='1');cont.textContent=(s===4||s==='4')?'Get My Free Analysis':'Continue';}
   }
   function validate(s){
     if(s===1||s==='1'){const ids=['f-biz-name','f-name','f-phone','f-email','f-location','f-biz-type'];for(const id of ids){const el=document.getElementById(id);if(!el.value.trim()){el.focus();el.style.borderColor='#e05a2b';setTimeout(()=>el.style.borderColor='',1800);return false;}}return true;}
-    if(s===2||s==='2'){if(!adsHist){alert('Please select an option to continue.');return false;}}
-    if(s===5||s==='5'){
-      const d=document.getElementById('f-call-date');
-      if(!d.value){d.focus();d.style.borderColor='#e05a2b';setTimeout(()=>d.style.borderColor='',1800);return false;}
-      if(!selected('f-call-time')){alert('Please select a preferred time of day to continue.');return false;}
-    }
+    if(s===2||s==='2'){const ids=['f-website','f-current-acquisition','f-acquisition-owner','f-acquisition-direction'];for(const id of ids){const el=document.getElementById(id);if(!el.value.trim()){el.focus();el.style.borderColor='#e05a2b';setTimeout(()=>el.style.borderColor='',1800);return false;}}return true;}
+    if(s===3||s==='3'){const ids=['f-analysis-goal','f-improve-area'];for(const id of ids){const el=document.getElementById(id);if(!el.value.trim()){el.focus();el.style.borderColor='#e05a2b';setTimeout(()=>el.style.borderColor='',1800);return false;}}return true;}
+    if(s===4||s==='4'){const el=document.getElementById('f-timeline');if(!el.value){el.focus();el.style.borderColor='#e05a2b';setTimeout(()=>el.style.borderColor='',1800);return false;}}
     return true;
   }
   window.fpNext=function(){
     if(!validate(cur))return;
     if(cur===1||cur==='1'){show(2);return;}
-    if(cur===2||cur==='2'){show(s3());return;}
-    if(['3a','3b','3c'].includes(String(cur))){show(4);return;}
-    if(cur===4){show(5);return;}
-    if(cur===5){
+    if(cur===2||cur==='2'){show(3);return;}
+    if(cur===3||cur==='3'){show(4);return;}
+    if(cur===4||cur==='4'){
       const cont=document.getElementById('fp-continue');
       cont.disabled=true;cont.textContent='Submitting…';
       submitLead().then(()=>{show('thankyou');}).catch(()=>{
         alert('Something went wrong submitting your details. Please try again.');
-        cont.disabled=false;cont.textContent='Book My Strategy Call';
+        cont.disabled=false;cont.textContent='Get My Free Analysis';
       });
       return;
     }
   };
-  window.fpBack=function(){if(cur===2){show(1);return;}if(['3a','3b','3c'].includes(String(cur))){show(2);return;}if(cur===4){show(s3());return;}if(cur===5){show(4);return;}};
-  document.querySelectorAll('.fp-options:not(.multi) .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.closest('.fp-options').querySelectorAll('.fp-option').forEach(o=>o.classList.remove('selected'));this.classList.add('selected');if(this.closest('#f-ads-history'))adsHist=this.dataset.val;if(this.closest('#f-service-interest'))document.getElementById('meta-note').style.display=this.dataset.val==='meta'?'block':'none';if(this.closest('#f-why-stopped'))document.getElementById('f-stopped-other-wrap').style.display=this.dataset.val==='other'?'flex':'none';});});
-  document.querySelectorAll('.fp-options.multi .fp-option').forEach(opt=>{opt.addEventListener('click',function(){this.classList.toggle('selected');});});
+  window.fpBack=function(){if(cur===2||cur==='2'){show(1);return;}if(cur===3||cur==='3'){show(2);return;}if(cur===4||cur==='4'){show(3);return;}};
   document.getElementById('f-biz-type').addEventListener('change',function(){document.getElementById('f-other-wrap').style.display=this.value==='Other'?'flex':'none';});
-  const callDateEl=document.getElementById('f-call-date');
-  if(callDateEl){const t=new Date();callDateEl.min=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');}
+  document.getElementById('f-current-acquisition').addEventListener('change',function(){document.getElementById('f-ad-budget-wrap').style.display=(this.value==='meta-ads'||this.value==='google-ads')?'flex':'none';});
   show(1);
 })();
