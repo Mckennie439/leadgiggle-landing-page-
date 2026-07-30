@@ -7,6 +7,10 @@
     {
       "source": "/case-study-gp-solar-systems",
       "destination": "/case-study-gp-solar-systems.html"
+    },
+    {
+      "source": "/free-analysis",
+      "destination": "/free-analysis.html"
     }
   ]
 }
