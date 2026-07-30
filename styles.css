@@ -147,6 +147,9 @@ section{padding:96px 0;position:relative}
 .process-step h3{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:12px}
 .process-step p{font-size:0.9rem;color:var(--muted);line-height:1.78}
 .why-sub{font-size:1rem;color:#5A6270;max-width:640px;line-height:1.78;margin-top:16px;margin-bottom:52px}
+.why-sub-block{max-width:640px;margin-top:16px;margin-bottom:52px}
+.why-sub-block p{font-size:1rem;color:#5A6270;line-height:1.78;margin-bottom:14px}
+.why-sub-block p:last-child{margin-bottom:0}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--bdl);border-radius:12px;overflow:hidden}
 .why-card{background:var(--white);padding:36px 30px}
 .why-card.dark{background:var(--navy);grid-column:1/-1}
