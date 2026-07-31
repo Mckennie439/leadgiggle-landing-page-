@@ -227,7 +227,7 @@ footer{background:#fff;border-top:1px solid rgba(25,57,101,0.1);position:relativ
 .fp-nav-logo img{height:36px;width:auto}
 .fp-close{background:none;border:none;cursor:pointer;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:1.2rem;transition:background 0.15s,color 0.15s}
 .fp-close:hover{background:var(--cream-dk);color:var(--navy)}
-.fp-hero{background:var(--navy);padding:64px 0 52px;position:relative;overflow:hidden}
+.fp-hero{background:var(--navy);padding:148px 0 0;position:relative;overflow:hidden}
 .fp-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--orange),transparent);opacity:0.35}
 .fp-hero-inner{position:relative;z-index:2;max-width:680px}
 .fp-hero h1{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;letter-spacing:-0.025em;line-height:1.12;margin-bottom:10px}
@@ -316,6 +316,7 @@ footer{background:#fff;border-top:1px solid rgba(25,57,101,0.1);position:relativ
   .cs-metrics{grid-template-columns:1fr 1fr}
   .process-step{grid-template-columns:52px 1fr;gap:20px}
   .qual-grid{grid-template-columns:1fr}
+  .fp-hero{padding-top:112px}
   .fp-body{padding:32px 20px 60px}
   .fp-card{padding:28px 20px 24px}
   .fp-grid-2{grid-template-columns:1fr}

@@ -1,5 +1,3 @@
-function showForm(){document.getElementById('page-form').style.display='block';document.getElementById('page-lp').style.display='none';window.scrollTo({top:0,behavior:'instant'});}
-function hideForm(){document.getElementById('page-form').style.display='none';document.getElementById('page-lp').style.display='block';}
 let menuOpen=false;
 function toggleMenu(){menuOpen=!menuOpen;const p=document.getElementById('nav-panel');if(menuOpen){p.style.display='block';requestAnimationFrame(()=>p.classList.add('open'));document.body.style.overflow='hidden';}else closeMenu();}
 function closeMenu(){menuOpen=false;const p=document.getElementById('nav-panel');p.classList.remove('open');document.body.style.overflow='';setTimeout(()=>{if(!p.classList.contains('open'))p.style.display='none';},240);}
@@ -113,6 +111,7 @@ document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
   document.querySelectorAll('.wave-wrap').forEach(init);
 })();
 (function(){
+  if(!document.getElementById('fp-step-1'))return;
   const SUPABASE_URL='https://plyediiadzyzahdylmyb.supabase.co';
   const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBseWVkaWlhZHp5emFoZHlsbXliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUwMTI5NTIsImV4cCI6MjA3MDU4ODk1Mn0.tgWqzNJsLWOynSd9YtKTxbueZrUtqPj0KXUQw1yDscM';
   const MAKE_WEBHOOK_URL='https://hook.eu2.make.com/x7hd0oiuc9rxgsoskhhx6zwki5oeycwi';

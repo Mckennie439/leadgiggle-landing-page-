@@ -11,6 +11,10 @@
     {
       "source": "/free-analysis",
       "destination": "/free-analysis.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
     }
   ]
 }

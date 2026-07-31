@@ -23,14 +23,14 @@
 <body>
 
 <nav id="main-nav">
-  <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></a>
+  <a href="/" class="nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></a>
   <ul class="nav-desktop">
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="case-study-gp-solar-systems.html">Case Study</a></li>
-    <li><a href="index.html#process">Process</a></li>
-    <li><a href="index.html#why">Why Us</a></li>
-    <li><a href="index.html#faq">FAQ</a></li>
-    <li><button onclick="showForm()" class="nav-cta">Book a Strategy Call</button></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/case-study-gp-solar-systems">Case Study</a></li>
+    <li><a href="/#process">Process</a></li>
+    <li><a href="/#why">Why Us</a></li>
+    <li><a href="/#faq">FAQ</a></li>
+    <li><a href="/free-analysis" class="nav-cta">Book a Strategy Call</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
@@ -38,12 +38,12 @@
 <div class="nav-panel" id="nav-panel">
   <div class="nav-panel-header"><button class="nav-close-panel" onclick="closeMenu()">✕</button></div>
   <div class="nav-panel-links">
-    <a href="index.html#services">Services</a>
-    <a href="case-study-gp-solar-systems.html">Case Study</a>
-    <a href="index.html#process">Process</a>
-    <a href="index.html#why">Why Us</a>
-    <a href="index.html#faq">FAQ</a>
-    <button onclick="showForm();closeMenu()" class="panel-cta">Book a Strategy Call</button>
+    <a href="/#services">Services</a>
+    <a href="/case-study-gp-solar-systems">Case Study</a>
+    <a href="/#process">Process</a>
+    <a href="/#why">Why Us</a>
+    <a href="/#faq">FAQ</a>
+    <a href="/free-analysis" class="panel-cta">Book a Strategy Call</a>
   </div>
 </div>
 
@@ -256,12 +256,12 @@
     </div>
 
     <nav class="footer-nav" aria-label="Footer">
-      <a href="index.html#services">Services</a>
-      <a href="case-study-gp-solar-systems.html">Case Study</a>
-      <a href="index.html#process">Process</a>
-      <a href="index.html#why">Why Us</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="/#services">Services</a>
+      <a href="/case-study-gp-solar-systems">Case Study</a>
+      <a href="/#process">Process</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/privacy-policy">Privacy Policy</a>
     </nav>
 
     <div class="footer-contact">
@@ -282,76 +282,6 @@
 </footer>
 </section>
 
-</div>
-
-<div id="page-form">
-  <div class="fp-nav"><div class="fp-nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></div><button class="fp-close" onclick="hideForm()">✕</button></div>
-  <div class="fp-hero">
-    <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
-    <div class="container fp-hero-inner" style="position:relative;z-index:2">
-      <span class="eyebrow">Get Your Free Analysis</span>
-      <h1>Tell Us About Your Business</h1>
-      <h2>The information you provide shapes a focused analysis of where your business might be losing opportunities, and where the biggest wins might be.</h2>
-      <p>No call required to get it, if it leads somewhere worth exploring further, that's a conversation for after you've seen it.</p>
-      <p style="margin-top:12px;font-size:0.82rem;color:rgba(255,255,255,0.4)">It takes about 2 minutes to complete.</p>
-    </div>
-  </div>
-  <div class="fp-body">
-    <div class="fp-progress-track"><div class="fp-progress-bar" id="fp-bar"></div></div>
-    <div class="fp-step-labels"><span data-step="1">Business</span><span data-step="2">Situation</span><span data-step="3">Goals</span><span data-step="4">Timeline</span></div>
-    <div class="fp-card">
-      <div class="fp-step active" id="fp-step-1">
-        <div class="fp-step-title">Step 1 of 4: Business Details</div>
-        <div class="fp-grid-2">
-          <div class="fp-field"><label>Business Name <span class="req">*</span></label><input type="text" id="f-biz-name" placeholder="e.g. Sunray Solar Ltd"/></div>
-          <div class="fp-field"><label>Your Name <span class="req">*</span></label><input type="text" id="f-name" placeholder="First and last name"/></div>
-          <div class="fp-field"><label>Phone Number <span class="req">*</span></label><input type="tel" id="f-phone" placeholder="e.g. +254 712 345 678"/><span class="fp-hint">We'll use this to reach you directly</span></div>
-          <div class="fp-field"><label>Email Address <span class="req">*</span></label><input type="email" id="f-email" placeholder="you@yourbusiness.com"/></div>
-          <div class="fp-field"><label>Location <span class="req">*</span></label><input type="text" id="f-location" placeholder="e.g. Nairobi, Mombasa, Kisumu"/></div>
-          <div class="fp-field"><label>Type of Business <span class="req">*</span></label><select id="f-biz-type"><option value="">Select your business type</option><option>Solar Installation</option><option>HVAC</option><option>Borehole Drilling</option><option>Water Treatment (Residential &amp; Commercial)</option><option>Plumbing</option><option>Construction</option><option>Roofing</option><option>CCTV &amp; Security Installation</option><option>Interior Design</option><option>Outdoor Structures (Gazebos, Pergolas &amp; Shade Installation)</option><option>Landscaping &amp; Garden Services</option><option>Swimming Pool Construction</option><option>Electric Fence Installation</option><option>Other</option></select></div>
-        </div>
-        <div class="fp-field-full" id="f-other-wrap" style="display:none"><label>Please describe your business</label><input type="text" id="f-other-biz" placeholder="Brief description"/></div>
-      </div>
-      <div class="fp-step" id="fp-step-2">
-        <div class="fp-step-title">Step 2 of 4: Current Situation</div>
-        <div class="fp-field-full no-top"><label>Website URL <span class="req">*</span></label><input type="text" id="f-website" placeholder="e.g. www.yourbusiness.com"/></div>
-        <div class="fp-field-full"><label>Social media handle or main platform link <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><input type="text" id="f-social" placeholder="e.g. @yourbusiness or a link"/></div>
-        <div class="fp-field-full"><label>What are you currently doing for customer acquisition? <span class="req">*</span></label><select id="f-current-acquisition"><option value="">Select an option</option><option value="meta-ads">Running Meta Ads</option><option value="google-ads">Running Google Ads</option><option value="organic-only">Just social media and local visibility, no paid ads</option><option value="referrals">Relying mostly on referrals</option><option value="mix">A mix of the above</option><option value="not-much">Not doing much at all right now</option></select></div>
-        <div class="fp-field-full" id="f-ad-budget-wrap" style="display:none"><label>Roughly what's your monthly ad budget? <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><select id="f-ad-budget"><option value="">Select a range</option><option value="u100">Under $100/month</option><option value="100-300">$100–$300/month</option><option value="300-500">$300–$500/month</option><option value="500-1000">$500–$1,000/month</option><option value="o1000">Over $1,000/month</option><option value="prefer-not">Prefer not to say</option></select></div>
-        <div class="fp-field-full"><label>Who currently handles your customer acquisition? <span class="req">*</span></label><select id="f-acquisition-owner"><option value="">Select an option</option><option value="in-house">An in-house team member</option><option value="agency">An agency or freelancer</option><option value="me">Me personally, no dedicated help</option><option value="nobody">Nobody right now, it's been neglected</option></select></div>
-        <div class="fp-field-full"><label>Going forward, are you looking to hire this out, or build internal capability? <span class="req">*</span></label><select id="f-acquisition-direction"><option value="">Select an option</option><option value="hire-out">Looking for a partner to run this for us</option><option value="in-house">Looking to build our own in-house capability</option><option value="not-sure">Not sure yet, open to either</option></select></div>
-      </div>
-      <div class="fp-step" id="fp-step-3">
-        <div class="fp-step-title">Step 3 of 4: What You're Looking For</div>
-        <div class="fp-field-full no-top"><label>What are you most hoping to get out of this analysis? <span class="req">*</span></label><input type="text" id="f-analysis-goal" placeholder="Tell us what you're hoping to learn"/></div>
-        <div class="fp-field-full"><label>What would you most like to see improve in your business? <span class="req">*</span></label><input type="text" id="f-improve-area" placeholder="Tell us what you'd like to see change"/></div>
-      </div>
-      <div class="fp-step" id="fp-step-4">
-        <div class="fp-step-title">Step 4 of 4: Timeline &amp; Notes</div>
-        <div class="fp-field-full no-top"><label>How soon are you hoping to see improvement? <span class="req">*</span></label><select id="f-timeline"><option value="">Select an option</option><option value="urgent">Urgent — within 30 days</option><option value="1-3-months">Not urgent, but I'd like performance to start improving in the next 1–3 months</option><option value="no-rush">No rush, happy with my current system, but I think it could be better</option></select></div>
-        <div class="fp-field-full"><label>Anything else we should know? <span style="font-weight:400;color:#8A94A8">(Optional)</span></label><textarea id="f-notes" rows="3" placeholder="Any context that would help us prepare your analysis"></textarea></div>
-      </div>
-      <div class="fp-step" id="fp-step-thankyou">
-        <div class="fp-ty">
-          <div class="fp-ty-icon">✓</div>
-          <h2>You're All Set</h2>
-          <div class="fp-ty-body">
-            <p>Thanks for sharing that.</p>
-            <p>Your free analysis is being put together now and will land in your inbox within the hour.</p>
-            <p>It'll walk through what's already working, and where opportunities might currently be getting lost or left on the table.</p>
-            <p>If anything in it feels worth going deeper on, there'll be a simple way to book a short strategy call from there, entirely up to you.</p>
-          </div>
-          <p class="fp-ty-note">Talk soon,<br>Alfred<br>Lead Strategist, LeadGiggle</p>
-          <button class="btn btn-primary" onclick="hideForm()">Back To The Case Study</button>
-        </div>
-      </div>
-      <div class="fp-nav-btns" id="fp-nav-btns">
-        <button class="fp-back-btn" id="fp-back" onclick="fpBack()" disabled>← Back</button>
-        <button class="btn btn-primary fp-continue-btn" id="fp-continue" onclick="fpNext()">Continue</button>
-      </div>
-      <p class="fp-footer-note" id="fp-footer-note">You'll receive your free analysis within 1 hour. If it points to a real opportunity, we can set up a short strategy call from there.</p>
-    </div>
-  </div>
 </div>
 
 <script src="script.js"></script>
