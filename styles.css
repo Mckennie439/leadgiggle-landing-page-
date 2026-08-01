@@ -6,6 +6,7 @@ body,#hero,.why-card.dark,.why-strategist,.fp-hero,.cs-band-navy,section[style*=
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .container{max-width:1060px;margin:0 auto;padding:0 32px}
+.hl{background:rgba(255,105,0,0.18);padding:0.03em 0.32em;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 h1,h2,h3,h4{font-family:'Fraunces',serif;letter-spacing:-0.02em;line-height:1.12}
 #page-lp{display:block}
 #page-form{display:none;position:fixed;inset:0;z-index:500;background:var(--cream);overflow-y:auto}
@@ -384,6 +385,10 @@ table.diag-table td a:hover{color:var(--orange)}
 .diag-toc-item:last-child{border-bottom:none}
 .diag-toc-item:hover{background:var(--cream-dk);color:var(--navy)}
 .diag-toc-num{flex-shrink:0;width:20px;font-family:'Fraunces',serif;font-weight:700;color:var(--orange);font-size:0.85rem}
+.diag-ad-link{color:var(--orange);font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,105,0,0.4);text-underline-offset:3px}
+.diag-ad-link:hover{color:var(--orange)}
+.diag-toc-item.diag-ad-link{text-decoration:none}
+.diag-toc-item.diag-ad-link:hover{color:var(--orange)}
 .diag-channel-table-wrap{border:1px solid var(--bdl);border-radius:12px;overflow:hidden;background:var(--white);margin:22px 0}
 table.diag-channel-table{width:100%;border-collapse:collapse;font-size:0.88rem}
 table.diag-channel-table th{text-align:left;font-family:'Inter',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--orange);padding:14px 18px;background:var(--cream-dk);border-bottom:1px solid var(--bdl)}
