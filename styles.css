@@ -48,12 +48,13 @@ section{padding:96px 0;position:relative}
 .hero-mascot img{width:210px;height:auto;display:block;animation:float 5s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
 .hero-headline{font-family:'Fraunces',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;line-height:1.08;letter-spacing:-0.03em;max-width:700px;margin-bottom:20px}
+.hero-support{font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;font-weight:600;color:#DCE4F0;max-width:600px;line-height:1.5;margin-bottom:18px}
 .hero-sub{font-size:1rem;color:var(--muted);max-width:580px;line-height:1.78;margin-bottom:32px}
 .hero-trust{display:flex;flex-direction:column;gap:8px;margin-bottom:40px}
 .hero-trust-item{display:flex;align-items:center;gap:10px;font-size:0.82rem;color:var(--muted)}
 .hero-trust-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--orange);flex-shrink:0}
 .problem-sub{font-size:1rem;color:#5A6270;max-width:700px;line-height:1.78;margin-top:16px;margin-bottom:52px}
-.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--bdl);border-radius:12px;overflow:hidden}
+.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--bdl);border-radius:12px;overflow:hidden}
 .problem-card{background:var(--white);padding:36px 30px}
 .problem-num{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;color:var(--cream-dk);line-height:1;margin-bottom:16px}
 .problem-card h3{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:12px}
