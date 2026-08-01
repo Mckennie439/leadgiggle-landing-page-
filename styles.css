@@ -6,7 +6,7 @@ body,#hero,.why-card.dark,.why-strategist,.fp-hero,.cs-band-navy,section[style*=
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .container{max-width:1060px;margin:0 auto;padding:0 32px}
-.hl{background:rgba(255,105,0,0.18);padding:0.03em 0.32em;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl{color:var(--orange)}
 h1,h2,h3,h4{font-family:'Fraunces',serif;letter-spacing:-0.02em;line-height:1.12}
 #page-lp{display:block}
 #page-form{display:none;position:fixed;inset:0;z-index:500;background:var(--cream);overflow-y:auto}
@@ -315,6 +315,7 @@ footer{background:#fff;border-top:1px solid rgba(25,57,101,0.1);position:relativ
   .hero-mascot{display:none}
   .problem-grid,.services-grid,.why-grid,.cs-screenshots-grid{grid-template-columns:1fr}
   .why-card.dark,.why-strategist{grid-column:1}
+  .why-strategist .btn{font-size:0.8rem;padding:11px 20px}
   .cs-metrics{grid-template-columns:1fr 1fr}
   .process-step{grid-template-columns:52px 1fr;gap:20px}
   .qual-grid{grid-template-columns:1fr}
