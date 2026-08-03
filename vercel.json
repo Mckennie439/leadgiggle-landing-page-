@@ -15,6 +15,10 @@
     {
       "source": "/privacy-policy",
       "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/ads-performance-diagnostic-for-google-and-meta-ads",
+      "destination": "/ads-performance-diagnostic-for-google-and-meta-ads.html"
     }
   ]
 }

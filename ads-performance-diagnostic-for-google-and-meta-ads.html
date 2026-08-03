@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="color-scheme" content="light only"/>
+<meta name="supported-color-schemes" content="light"/>
+<meta name="theme-color" content="#193965"/>
+<title>Ads Performance Diagnostic: LeadGiggle</title>
+<meta name="description" content="A closer look at where ad performance actually breaks down for businesses already running Google or Meta ads."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xngxg0n3qy");
+</script>
+</head>
+<body class="diag-body">
+
+<nav id="main-nav" class="diag-nav">
+  <a href="/" class="nav-logo"><img src="assets/logo.png" alt="LeadGiggle"/></a>
+  <a class="btn btn-primary nav-book-btn" href="/free-analysis">Get Your Free Analysis</a>
+</nav>
+
+<div id="page-lp">
+
+<section class="diag-hero">
+  <div class="wave-wrap"><canvas class="wave-canvas"></canvas></div>
+  <div class="container" style="position:relative;z-index:2">
+    <span class="eyebrow">Free Ad Performance Diagnostic</span>
+    <h1 class="diag-title reveal">Wondering If You Could Get More Out Of Your Ads?</h1>
+    <p class="diag-subtitle reveal reveal-delay-1">A closer look at where ad performance actually breaks down, for businesses already running Google or Meta</p>
+    <div class="diag-intro reveal reveal-delay-2">
+      <p>Running ads doesn't automatically tell you why they perform the way they do. Most business owners running ads have a general sense of whether things feel "fine" or "not great," but not much more than that.</p>
+      <p>This document walks through where ad performance typically leaks, using the same diagnostic process behind LeadGiggle's own case study, and how to actually check, not guess.</p>
+    </div>
+  </div>
+</section>
+
+<section class="diag-block" id="whats-inside">
+  <div class="container">
+    <h2 class="diag-block-heading reveal">What's Inside</h2>
+    <div class="diag-toc reveal">
+      <a class="diag-toc-item" href="#can-you-see-it"><span class="diag-toc-num">1</span>Can You Actually See What's Happening?</a>
+      <a class="diag-toc-item" href="#wheres-the-leak"><span class="diag-toc-num">2</span>Where's The Leak? (Click, Landing, Close)</a>
+      <a class="diag-toc-item" href="#funnel-problem"><span class="diag-toc-num">3</span>Your Funnel Problem: Where Does The Conversation Actually Happen?</a>
+      <a class="diag-toc-item" href="#lead-quality"><span class="diag-toc-num">4</span>Lead Quality Is Poor</a>
+      <a class="diag-toc-item" href="#campaign-structure"><span class="diag-toc-num">5</span>Campaign Structure &amp; Budget Allocation</a>
+      <a class="diag-toc-item" href="#creative-testing"><span class="diag-toc-num">6</span>Creative Testing Discipline</a>
+      <a class="diag-toc-item" href="#platform-nuance"><span class="diag-toc-num">7</span>Platform-Specific Nuance: Google vs. Meta</a>
+      <a class="diag-toc-item" href="#ad-constraint"><span class="diag-toc-num">8</span>Where Is Your Ad Constraint?</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+<section class="diag-section reveal" id="can-you-see-it">
+  <h2 class="diag-h2"><span class="diag-num">1.</span> Can You Actually See What's Happening?</h2>
+  <p>Before anything else, one honest question: if asked right now how many leads came from ads last month, and what each one cost, could you actually answer, or would it be a rough guess?</p>
+  <p>Most of what follows in this document only works if that question has a real answer. Without it, it's impossible to tell whether the constraint is the ad, the landing page, or the follow-up, because there's no way to see where in that chain things are actually falling off.</p>
+  <p>Basic tracking, knowing which platform, which campaign, and ideally which ad produced a given lead, isn't a nice-to-have. It's the difference between fixing the right thing and guessing.</p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>If ten enquiries came in this month, could you say exactly which ones came from ads, and which specific campaign or platform each one came from?</p></div>
+</section>
+
+<section class="diag-section reveal" id="wheres-the-leak">
+  <h2 class="diag-h2"><span class="diag-num">2.</span> Where's The Leak? (Click, Landing, Close)</h2>
+  <p>If tracking is in place, the next question becomes where things are actually breaking down. It's almost never everything at once. It's usually one specific point in the chain.</p>
+
+  <div class="diag-gap-table-wrap">
+    <div class="diag-gap-col">
+      <div class="diag-gap-col-head">Low Ad Click-Through</div>
+      <ul>
+        <li>Ad media is unappealing <em>(Meta)</em></li>
+        <li>Ad doesn't stand out in the feed <em>(Meta)</em> / search results <em>(Google)</em></li>
+        <li>Ad isn't immediately relevant</li>
+        <li>Ad is too long or difficult to consume</li>
+        <li>Offer in the ad isn't interesting enough</li>
+        <li>Ad flow feels off, doesn't sound human <em>(Meta)</em></li>
+        <li>Ad targeting is off</li>
+      </ul>
+    </div>
+    <div class="diag-gap-col">
+      <div class="diag-gap-col-head">Low Conversion Rate</div>
+      <ul>
+        <li>Page looks poor, weak attention to detail</li>
+        <li>Too much information, too fast</li>
+        <li>Media doesn't show real outcomes <em>(Meta)</em></li>
+        <li>Not enough social proof</li>
+        <li>Not enough trust builders</li>
+        <li>CTA isn't clear or easy enough</li>
+        <li>Offer isn't interesting enough</li>
+        <li>Page doesn't load properly on mobile</li>
+      </ul>
+    </div>
+    <div class="diag-gap-col">
+      <div class="diag-gap-col-head">Low Closing Percentage</div>
+      <ul>
+        <li>Leads contacted too late</li>
+        <li>Whoever's contacting the lead needs sales guidance</li>
+        <li>Poor lead quality due to targeting or ad copy</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>Looking at your own numbers, is it the click-through that's weak, the conversion once someone lands, or the close once a lead comes in?</p></div>
+</section>
+
+<section class="diag-section reveal" id="funnel-problem">
+  <h2 class="diag-h2"><span class="diag-num">3.</span> Your Funnel Problem: Where Does The Conversation Actually Happen?</h2>
+  <p>"Visit Profile" isn't automatically wrong. If the goal is awareness, staying visible, building recognition, it can be exactly the right choice.</p>
+  <p>The mismatch happens when the goal is actually leads or bookings, but the CTA still sends someone into a general profile instead of continuing the specific thing that got them to click. The ad made a promise. The click should land somewhere that keeps that promise going, not somewhere the visitor has to start over figuring out why they clicked.</p>
+  <p>This matters just as much for DMs. A DM conversation might work fine for a lower-ticket, quick-decision purchase. For a high-ticket, considered decision, negotiating a large project entirely through chat can quietly work against the sale, there's no clear structure, no natural point where the conversation moves toward a real next step.</p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>What's this campaign actually trying to do, build awareness, or generate direct enquiries? And does the CTA match that goal, or is it defaulting to whichever option was easiest to set up?</p></div>
+</section>
+
+<section class="diag-section reveal" id="lead-quality">
+  <h2 class="diag-h2"><span class="diag-num">4.</span> Lead Quality Is Poor</h2>
+  <p>Getting enquiries isn't the same as getting the right ones. This is often where the real leak hides, everything upstream might be working, and the business still ends up with a pipeline full of tire-kickers.</p>
+
+  <h3 class="diag-subhead">Common Causes, Google</h3>
+  <ul>
+    <li>Ads sending traffic to a general homepage instead of a dedicated landing page</li>
+    <li>A form that only asks for name, phone, email, and service type, capturing contact details but filtering nothing</li>
+  </ul>
+
+  <h3 class="diag-subhead">Common Causes, Meta</h3>
+  <ul>
+    <li>Running "Send Message" ads instead of "Learn More" ads pointed at a dedicated landing page</li>
+    <li>No qualifying step before a conversation starts, every message treated the same regardless of intent</li>
+  </ul>
+
+  <h3 class="diag-subhead">What's actually happening underneath these</h3>
+  <p>For Google, the fix usually starts with where the ad sends people. A dedicated landing page, built around one specific offer and real trust signals, gives a visitor a reason to act and filters out people who were never a serious fit. The form itself matters just as much. Adding two or three sharper questions, project scope, timeline, budget range, does real qualifying work before a conversation even starts.</p>
+  <p>For Meta, the pattern worth understanding is why "Send Message" ads tend to produce this specific problem. The Meta Pixel optimizes for whatever signal it's given. If the only signal is "someone sent a message," that's all it learns to chase, more people who message, with no way to tell a serious buyer from someone who messaged out of curiosity. Over time, this can quietly train the algorithm to find more of the wrong kind of lead, while the sales team spends real time following up on enquiries that were never going anywhere. A tighter landing page with a proper form usually means fewer total enquiries, but meaningfully better ones, and better signal for the Pixel to actually learn from.</p>
+  <p><span class="hl">Worth noting: WhatsApp-based ads can be made to perform better with the right setup, feeding qualified-lead data back into Meta so the Pixel learns from actual outcomes, not just messages sent. Most businesses running WhatsApp ads haven't set this up, which is usually why the pattern above shows up in the first place.</span></p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>If ten enquiries came in this week, how many would you honestly call serious buyers? And is the current setup, ad type, landing destination, form, actually built to filter for that, or just built to make it easy to enquire?</p></div>
+</section>
+
+<section class="diag-section reveal" id="campaign-structure">
+  <h2 class="diag-h2"><span class="diag-num">5.</span> Campaign Structure &amp; Budget Allocation</h2>
+  <p>Even a strong ad and a strong landing page can underperform if the campaign itself is structured poorly underneath them.</p>
+  <p>Is spend split across so many campaigns or audiences that none of them ever get enough budget to actually exit the learning phase and produce reliable data? This is the same problem as spreading a small budget across too many platforms, just happening inside a single one.</p>
+  <p>There's also a subtler version of this: multiple campaigns unintentionally targeting the same audience, competing against each other rather than reaching new people, which quietly drives up costs without adding real reach.</p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>How many active campaigns or ad sets are currently running, does each one have enough budget to actually prove whether it works, and are any of them likely competing for the exact same audience?</p></div>
+</section>
+
+<section class="diag-section reveal" id="creative-testing">
+  <h2 class="diag-h2"><span class="diag-num">6.</span> Creative Testing Discipline</h2>
+  <p>Running the same ad for months without ever testing a variation is a common, quiet cause of decline. Audiences get used to seeing the same thing, and performance drops even when nothing else about the business has changed.</p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>When was the current ad creative last changed or tested against something new?</p></div>
+</section>
+
+<section class="diag-section reveal" id="platform-nuance">
+  <h2 class="diag-h2"><span class="diag-num">7.</span> Platform-Specific Nuance: Google vs. Meta</h2>
+  <p>Google and Meta don't fail for the same reasons.</p>
+  <p>On Google, the person searching already has intent. If click-through is weak, it's usually relevance, wrong keywords, or the ad copy not matching what was searched. If conversion is weak, the landing page usually isn't answering the exact question that search implied.</p>
+  <p>On Meta, nobody was looking for this a moment ago. If click-through is weak, it's almost always the creative itself, not compelling enough to interrupt a scroll. If conversion is weak, it's often a trust gap, the page doesn't yet give someone unfamiliar with the business enough reason to believe it.</p>
+  <div class="diag-selfcheck"><span class="diag-selfcheck-label">Self-check</span><p>Which platform is this, and does the likely cause match what's typical for that platform, or does something about the pattern feel different from what's expected?</p></div>
+</section>
+
+</div>
+
+<section class="diag-block" id="ad-constraint">
+  <div class="container diag-closing-block reveal">
+    <h2 class="diag-block-heading">Where Is Your Ad Constraint?</h2>
+    <p>If <strong>tracking isn't in place</strong>, that's the actual starting point, everything else in this document depends on being able to see the numbers first.</p>
+    <p>If <strong>click-through is weak</strong>, the ad itself isn't earning attention.</p>
+    <p>If <strong>conversion is weak</strong>, the page isn't giving someone a reason to act once they land.</p>
+    <p>If <strong>lead quality is poor</strong>, the funnel is filtering for volume, not fit.</p>
+    <p>If <strong>closing is weak</strong>, the leak isn't in the ad at all, it's in what happens after someone reaches out.</p>
+    <p>If <strong>the funnel itself</strong>, DM-only, "Visit Profile" on a leads campaign, is working against the goal, that's worth fixing before anything else gets tested further.</p>
+    <p>If <strong>none of the above quite fits</strong>, the issue might be sitting underneath all of it, campaign structure spreading budget too thin, campaigns competing against each other, or creative that's been running unchanged for too long.</p>
+    <p>Seeing where the leak is is one thing. Knowing exactly what to do about it is a different exercise entirely.</p>
+  </div>
+</section>
+
+<section class="diag-block-tight" id="strategy-conversation">
+  <div class="container diag-closing-block">
+    <h2 class="diag-block-heading reveal">Wondering What This Looks Like For Your Specific Campaigns?</h2>
+    <p class="reveal reveal-delay-1">Everything in this document can be checked from the outside, your landing page, your form, your ad setup as you understand it. That's exactly what the free analysis covers, no call required, usually back within the hour.</p>
+    <p class="reveal reveal-delay-1">The exact numbers, click-through rate, cost per lead, and for Meta specifically, what the Pixel is actually optimizing for, only show up with a look at the ad account itself. That's usually where a short strategy call comes in, once there's something worth going deeper on.</p>
+    <div style="display:flex;justify-content:center;margin:28px 0" class="reveal reveal-delay-2"><a class="btn btn-primary" href="/free-analysis">Get Your Free Analysis</a></div>
+  </div>
+</section>
+
+</div>
+
+<section class="footer-wrap">
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-brand-name">LeadGiggle</span>
+      <p class="footer-tagline">Predictable Customer Acquisition Systems</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/alfred-mwalugho-729b19416?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LeadGiggle on LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/#services">Services</a>
+      <a href="/case-study-gp-solar-systems">Case Study</a>
+      <a href="/#process">Process</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="mailto:mwalughoalfred@gmail.com">mwalughoalfred@gmail.com</a>
+      <a href="tel:0758381476">0758381476</a>
+      <span>Nyahururu, Kenya</span>
+    </div>
+
+    <p class="footer-copy">© LeadGiggle 2026. All rights reserved.</p>
+  </div>
+
+  <div class="footer-bg-text" aria-hidden="true">LEADGIGGLE</div>
+  <div class="footer-line" aria-hidden="true"></div>
+  <div class="footer-badge">
+    <div class="footer-badge-inner"><img src="assets/mascot.png" alt="LeadGiggle"/></div>
+  </div>
+  <div class="footer-shadow" aria-hidden="true"></div>
+</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
