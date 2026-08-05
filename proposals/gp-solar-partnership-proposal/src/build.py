@@ -165,7 +165,7 @@ p {{
 
 .cover-logo {{
   width: 168px;
-  height: 168px;
+  height: auto;
   margin-bottom: 34pt;
   position: relative;
   z-index: 2;
